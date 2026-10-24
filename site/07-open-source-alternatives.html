@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open-source and local alternatives | The Free Tier Field Guide</title>
+  <meta name="description" content="Run useful AI without per-token bills, choose the right local tools, understand hardware and licenses, and avoid the hidden costs of self-hosting.">
+  <meta name="author" content="Asdale Dynamics, LLC">
+  <meta name="theme-color" content="#173b32">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Free Tier Field Guide">
+  <meta property="og:title" content="Open-source and local alternatives | The Free Tier Field Guide">
+  <meta property="og:description" content="Run useful AI without per-token bills, choose the right local tools, understand hardware and licenses, and avoid the hidden costs of self-hosting.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body class="page-chapter-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<symbol id="icon-arrow-right" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h13M11 5l5 5-5 5"/></symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10H4m5-5-5 5 5 5"/></symbol>
+<symbol id="icon-external" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3.5h5.5V9M16.5 3.5 8.5 11.5M15 12.5V17H3V5h4.5"/></symbol>
+<symbol id="icon-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 4.3 4.2L17 4.5"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l3 1.8"/></symbol>
+<symbol id="icon-download" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.8v10m0 0 4-4m-4 4-4-4M3 16.8h14"/></symbol>
+<symbol id="icon-search" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.3"/><path d="m12.5 12.5 4 4"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.4 17 5v4.6c0 4-2.9 6.8-7 8-4.1-1.2-7-4-7-8V5l7-2.6Z"/><path d="m6.8 9.8 2.1 2.1 4.4-4.4"/></symbol>
+<symbol id="icon-spark" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5c.4 4.8 2.7 7.1 7.5 7.5-4.8.4-7.1 2.7-7.5 7.5-.4-4.8-2.7-7.1-7.5-7.5 4.8-.4 7.1-2.7 7.5-7.5Z"/></symbol>
+<symbol id="icon-cloud" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 15.8h7.6a3.8 3.8 0 0 0 .5-7.6 5.1 5.1 0 0 0-9.8 1.1 3.3 3.3 0 0 0 1.7 6.5Z"/></symbol>
+<symbol id="icon-terminal" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2"/><path d="m6 7 3 3-3 3m6.5 0H14"/></symbol>
+<symbol id="icon-book" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5h5.2c1 0 1.8.8 1.8 1.8v11.2c0-1.1-.8-2-1.8-2H3V3.5Zm14 0h-5.2c-1 0-1.8.8-1.8 1.8v11.2c0-1.1.8-2 1.8-2H17V3.5Z"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M6.5 2.8v3.4M13.5 2.8v3.4M3 8.2h14m-10.3 3.3h2v2h-2z"/></symbol>
+<symbol id="icon-file" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2.8h6l4 4v10.4H5V2.8Z"/><path d="M11 2.8v4h4M7.8 11h4.4m-4.4 3h4.4"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 18 17H2L10 3Z"/><path d="M10 8v4m0 2.6v.1"/></symbol>
+<symbol id="icon-chevron-down" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7.5 5 5 5-5"/></symbol>
+</svg>
+  <div class="trust-bar">
+  <div class="container trust-inner">
+    <p class="trust-left"><span class="trust-signal" aria-hidden="true"></span>Independent, dated, no affiliate links</p>
+    <p class="trust-right">Offers checked <time datetime="2026-10-22">October 22, 2026</time></p>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="The Free Tier Field Guide, home">
+      <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+      <span class="brand-copy">
+        <span class="brand-kicker">Asdale Dynamics</span>
+        <span class="brand-title">The Free Tier Field Guide</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="guide.html" class="is-active" aria-current="page">The guide</a><a href="finder.html">Program finder</a><a href="tracker.html">Tracker</a><a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+  <main id="main">
+<article class="chapter">
+  <header class="chapter-hero">
+    <div class="container chapter-hero-inner">
+      <div class="chapter-hero-top">
+        <a class="back-link" href="guide.html"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg> All chapters</a>
+        <span class="chapter-position">Chapter 07 of 09</span>
+      </div>
+      <p class="chapter-kicker">Chapter 07 · Local-first</p>
+      <h1>Open-source and local alternatives</h1>
+      <p class="chapter-lede">Run useful AI without per-token bills, choose the right local tools, understand hardware and licenses, and avoid the hidden costs of self-hosting.</p>
+      <div class="chapter-meta">
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-clock"></use></svg> 9 min read</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg> Updated Oct 22, 2026</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg> Checked October 22, 2026</span>
+      </div>
+    </div>
+  </header>
+  <div class="container chapter-layout">
+    <aside class="chapter-aside">
+      <div class="aside-sticky">
+        <p class="toc-label">On this page</p>
+        <nav class="toc" aria-label="On this page">
+          <a class="toc-link toc-link--h2" href="#what-local-is-good-at-and-what-it-is-not">What local is good at—and what it is not</a>
+<a class="toc-link toc-link--h2" href="#a-practical-local-stack">A practical local stack</a>
+<a class="toc-link toc-link--h2" href="#hardware-without-the-hype">Hardware, without the hype</a>
+<a class="toc-link toc-link--h2" href="#a-safe-first-install">A safe first install</a>
+<a class="toc-link toc-link--h2" href="#free-hosted-experiments">Free hosted experiments</a>
+<a class="toc-link toc-link--h2" href="#model-licenses-are-not-all-the-same">Model licenses are not all the same</a>
+<a class="toc-link toc-link--h2" href="#security-local-is-not-automatically-safe">Security: local is not automatically safe</a>
+<a class="toc-link toc-link--h2" href="#when-self-hosting-is-cheaper">When self-hosting is cheaper</a>
+<a class="toc-link toc-link--h2" href="#an-open-source-back-office-for-an-author-llc">An open-source back office for an author-LLC</a>
+<a class="toc-link toc-link--h2" href="#try-this-now">Try this now</a>
+        </nav>
+        <div class="aside-promo">
+          <span class="aside-promo-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+          <p class="rail-label">Before you enter a card</p>
+          <p>Run the 15-minute audit: list the tools, set one hard cap, save one cancel URL.</p>
+          <a class="text-link text-link--small" href="08-avoid-surprise-bills.html">Open the playbook <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+      </div>
+    </aside>
+    <div class="chapter-content-wrap">
+      <details class="toc-disclosure">
+  <summary>On this page <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chevron-down"></use></svg></summary>
+  <nav class="toc-mobile-links" aria-label="On this page">
+    <a class="toc-link toc-link--h2" href="#what-local-is-good-at-and-what-it-is-not">What local is good at—and what it is not</a>
+<a class="toc-link toc-link--h2" href="#a-practical-local-stack">A practical local stack</a>
+<a class="toc-link toc-link--h2" href="#hardware-without-the-hype">Hardware, without the hype</a>
+<a class="toc-link toc-link--h2" href="#a-safe-first-install">A safe first install</a>
+<a class="toc-link toc-link--h2" href="#free-hosted-experiments">Free hosted experiments</a>
+<a class="toc-link toc-link--h2" href="#model-licenses-are-not-all-the-same">Model licenses are not all the same</a>
+<a class="toc-link toc-link--h2" href="#security-local-is-not-automatically-safe">Security: local is not automatically safe</a>
+<a class="toc-link toc-link--h2" href="#when-self-hosting-is-cheaper">When self-hosting is cheaper</a>
+<a class="toc-link toc-link--h2" href="#an-open-source-back-office-for-an-author-llc">An open-source back office for an author-LLC</a>
+<a class="toc-link toc-link--h2" href="#try-this-now">Try this now</a>
+  </nav>
+</details>
+      <div class="prose">
+        <p>There is a third option between free tiers and paid APIs: run the software yourself. For some jobs, it is genuinely cheaper and more private. For others, it is a hobby disguised as a business decision.</p>
+<p>This chapter gives you a practical local-first stack, hardware expectations, and the questions that keep self-hosting from becoming a second job.</p>
+<blockquote><p><strong>In plain English:</strong> Local AI has no per-token bill. You still pay for the computer, the electricity, the updates, the backups, and your time. The bill just arrives from somewhere else.</p></blockquote>
+<h2 id="what-local-is-good-at-and-what-it-is-not">What local is good at—and what it is not</h2>
+<p><strong>Good fit for a small, careful setup:</strong></p>
+<ul>
+<li>Drafting, rewriting, outlining, and summarizing text you do not want to send to a hosted free tier.</li>
+<li>Transcribing your own voice notes or meeting notes with consent and a retention plan.</li>
+<li>Tagging, searching, and organizing your own documents or research.</li>
+<li>Learning how models work, testing prompts, and teaching examples.</li>
+<li>An offline backup workflow when the internet or API is unavailable.</li>
+<li>Small coding assistance and repetitive file transforms under supervision.</li>
+</ul>
+
+<p><strong>Still difficult on a normal laptop:</strong></p>
+<ul>
+<li>Matching the best hosted models on complex reasoning, long contexts, or multimodal tasks.</li>
+<li>Running a large model with low latency while also running your IDE and browser.</li>
+<li>Production-grade availability, support, and security with no operator.</li>
+<li>High-volume batch processing on battery power.</li>
+<li>Reliable tool-using agents that can browse, write files, and execute code without supervision. Those need guardrails no matter where they run.</li>
+</ul>
+
+<p>The local gap is shrinking, but &quot;can run on my machine&quot; is not the same as &quot;solves the same problem as well.&quot;</p>
+<h2 id="a-practical-local-stack">A practical local stack</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Job</th><th scope="col">Tools worth knowing</th><th scope="col">What to know</th></tr></thead><tbody><tr><td>Run models</td><td><strong><a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">Ollama</a></strong>, <strong><a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">LM Studio</a></strong>, <strong><a href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noopener noreferrer">llama.cpp</a></strong></td><td>Ollama is a friendly command-line/server option; LM Studio is a desktop GUI; llama.cpp is the lower-level engine for tinkerers. All can run on CPU, with GPU acceleration where supported.</td></tr><tr><td>Chat interface</td><td><strong><a href="https://github.com/open-webui/open-webui" target="_blank" rel="noopener noreferrer">Open WebUI</a></strong></td><td>A self-hosted chat UI for local or remote model servers. Check the current license and secure the login before exposing it beyond your machine.</td></tr><tr><td>Documents and RAG</td><td><strong><a href="https://anythingllm.com/" target="_blank" rel="noopener noreferrer">AnythingLLM</a></strong></td><td>A desktop app for chatting with document collections. Local embeddings and models are possible, but a &quot;local&quot; RAG stack still needs a data-retention decision.</td></tr><tr><td>Coding</td><td><strong><a href="https://www.continue.dev/" target="_blank" rel="noopener noreferrer">Continue</a></strong>, <strong><a href="https://aider.chat/" target="_blank" rel="noopener noreferrer">Aider</a></strong>, <strong><a href="https://cline.bot/" target="_blank" rel="noopener noreferrer">Cline</a></strong></td><td>These can use hosted or local models. Aider edits files in your repository; commit or back up before letting any agent write.</td></tr><tr><td>Images</td><td><strong><a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener noreferrer">ComfyUI</a></strong>, Stable Diffusion WebUI, Fooocus</td><td>Node-based workflows are powerful and fiddly. GPU memory, model licenses, and safety filters matter.</td></tr><tr><td>Audio</td><td><strong><a href="https://github.com/openai/whisper" target="_blank" rel="noopener noreferrer">Whisper</a></strong>, faster-whisper, Piper TTS</td><td>Transcribe local audio on CPU or GPU. Do not use it on patient or client recordings without the right consent and compliance plan.</td></tr><tr><td>Automation</td><td><strong><a href="https://n8n.io/" target="_blank" rel="noopener noreferrer">n8n</a></strong> community edition, Home Assistant</td><td>n8n is fair-code, not OSI open source; the community edition is free to self-host for many internal uses, with license restrictions. Read the Sustainable Use License.</td></tr><tr><td>Writing and publishing</td><td>LibreOffice, Pandoc, Calibre, LanguageTool, Scribus</td><td>Not AI, but free, local, and useful for an author-publisher workflow. Calibre can manage an ebook library; Pandoc converts formats; LanguageTool checks grammar.</td></tr></tbody></table></div>
+<p>A reasonable first stack is <strong>Ollama + Open WebUI + one small document assistant</strong>, not a rack of servers. Add tools when a real workflow is blocked, not because a video made them look impressive.</p>
+<h2 id="hardware-without-the-hype">Hardware, without the hype</h2>
+<p>Local model size is usually described in billions of parameters. A common rough guide:</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Model size</th><th scope="col">Approximate memory at 4-bit quantization</th><th scope="col">Realistic hardware</th></tr></thead><tbody><tr><td>3–4B</td><td>2–3 GB</td><td>Most laptops with 8 GB RAM; a modest GPU helps.</td></tr><tr><td>7–8B</td><td>5–6 GB</td><td>16 GB RAM (CPU, slower) or a GPU with 6–8 GB VRAM.</td></tr><tr><td>13–14B</td><td>9–11 GB</td><td>12–16 GB VRAM, or a Mac with unified memory and patience.</td></tr><tr><td>30–34B</td><td>20–24 GB</td><td>24 GB VRAM or a high-memory unified-memory machine.</td></tr><tr><td>70B</td><td>40–48 GB+</td><td>Multiple GPUs, a workstation, or a server-class machine.</td></tr></tbody></table></div>
+<p>These are rough numbers. Context length, quantizer, runtime, and the rest of your desktop all affect whether a model actually fits. Leave headroom. A model that barely fits may run slowly or fail when you increase the context.</p>
+<p><strong>Do not buy a $1,500 GPU to avoid a $15 monthly API bill.</strong> That is more than eight years of the API bill, before electricity and your time. Buy or use local hardware when you value privacy, offline operation, learning, predictable costs at high volume, or the ability to keep working when a provider changes its terms. Those are legitimate reasons. &quot;Avoiding a subscription&quot; alone is usually not.</p>
+<p>Apple Silicon machines can be excellent local-AI machines because the unified memory is available to the GPU; performance varies by model and runtime. A gaming GPU can be excellent on a desktop. A thin laptop with 8 GB of RAM is a fine place to learn with a 3B model, but not a good place to run a 70B model. Start with what you own.</p>
+<h2 id="a-safe-first-install">A safe first install</h2>
+<p>Install Ollama from its official download page rather than piping a random script from a search result. Then use a small model:</p>
+<pre><code class="language-bash"># after installing Ollama from https://ollama.com/download
+ollama pull llama3.2:3b
+ollama run llama3.2:3b</code></pre>
+<p>Model names change. If that tag is no longer current, browse the official model library and choose a small instruct model. You can see what you have installed with <code>ollama list</code>.</p>
+<p>Ollama exposes an OpenAI-compatible endpoint at <code>http://localhost:11434/v1</code> for many tools. The API key value is a placeholder; local Ollama does not validate it. That means any tool on your machine that can reach localhost may also reach the model. Keep the server bound to localhost, do not expose port 11434 to the public internet, and do not install untrusted extensions that can read your files.</p>
+<p>For a first test, ask the model to summarize a page of public-domain text. Then ask it to do the same with a document you wrote. Compare the output with the hosted model you already use. You are looking for &quot;good enough for this job,&quot; not a benchmark victory.</p>
+<h2 id="free-hosted-experiments">Free hosted experiments</h2>
+<p>You do not need a new computer to try open models:</p>
+<ul>
+<li><strong>Google Colab</strong> and <strong>Kaggle</strong> offer free notebooks with limited, non-guaranteed GPU access. They are for experiments, not production, and public notebooks are not a private data store.</li>
+<li><strong>Hugging Face Spaces</strong> can host a small demo on free CPU, with sleep and usage limits. Do not assume free hosting equals private hosting.</li>
+<li><strong>OpenRouter</strong> and other providers offer free variants of some open models. The model may be open-weight, but the provider&#39;s data policy still applies.</li>
+<li><strong>LM Studio</strong> and <strong>Ollama</strong> are free to install; the model files have their own licenses.</li>
+</ul>
+
+<p>Free hosted compute changes frequently. Treat it as a place to learn, not an SLA.</p>
+<h2 id="model-licenses-are-not-all-the-same">Model licenses are not all the same</h2>
+<p>&quot;Open source&quot; is often used loosely for models whose weights are downloadable. The license may still restrict commercial use, require attribution, impose acceptable-use terms, or have a user-count threshold.</p>
+<p>Before you embed a model in a product:</p>
+<ol>
+<li>Open the model card and the license on Hugging Face or the creator&#39;s site.</li>
+<li>Check whether commercial use is permitted.</li>
+<li>Check whether you must display attribution or pass through terms.</li>
+<li>Check whether your use case is restricted.</li>
+<li>Save a copy of the license version you relied on.</li>
+</ol>
+
+<p>Examples of license families include Apache 2.0 (permissive), MIT (permissive), the Llama community license (source-available weights with conditions), and Gemma&#39;s terms (permitted commercial use with use restrictions). The details matter; do not assume that &quot;you can download it&quot; means &quot;you can ship it however you like.&quot;</p>
+<h2 id="security-local-is-not-automatically-safe">Security: local is not automatically safe</h2>
+<p>A local model is only one part of the system. The risk often comes from the tools around it:</p>
+<ul>
+<li>A coding agent can read your files, run shell commands, and make network requests. Use a disposable repository or a VM for experiments, and review diffs before accepting changes.</li>
+<li>A RAG assistant can be prompt-injected by a malicious document. Treat retrieved text as untrusted content; do not let it trigger tools or reveal secrets.</li>
+<li>A local web UI exposed to the internet needs authentication, HTTPS, updates, and backups. &quot;It is on my own server&quot; is not a security plan.</li>
+<li>Model downloads and plugins are software supply-chain risks. Prefer official sources and pin versions.</li>
+<li>Logs can contain sensitive prompts. Decide where they are stored and how long they live.</li>
+</ul>
+
+<p>The safest local workflow for a beginner is modest: one machine, localhost only, one model, a folder of non-sensitive documents, and a backup. Expand after you have a reason.</p>
+<h2 id="when-self-hosting-is-cheaper">When self-hosting is cheaper</h2>
+<p>Run the math on <strong>cost per useful output</strong>, not tokens alone:</p>
+<pre><code class="language-text">monthly local cost = hardware cost / useful months
+                   + electricity
+                   + your maintenance time (at a rate you respect)
+                   + backup/storage
+                   + the cost of mistakes</code></pre>
+<p>Then compare that with the paid API bill for the same useful output, including retries and your editing time. For a few dollars of API use per month, a new GPU is almost never cheaper. For a high-volume, privacy-sensitive, offline-first workflow, local can be compelling.</p>
+<p>A hybrid is often best: use a local model for drafts, classification, and private material; use a paid frontier model for the hard 10 percent; use a free hosted tier for learning. The goal is not purity. It is the lowest total cost for the outcome you need.</p>
+<h2 id="an-open-source-back-office-for-an-author-llc">An open-source back office for an author-LLC</h2>
+<p>ASDALE DYNAMICS, LLC can run a surprising amount of its operations with free, local tools:</p>
+<ul>
+<li><strong>Writing and conversions:</strong> Obsidian or a plain Markdown folder, Pandoc, LibreOffice.</li>
+<li><strong>Ebook checks:</strong> Calibre, LanguageTool, a human proofreader.</li>
+<li><strong>Bookkeeping:</strong> GnuCash or a self-hosted accounting package, with an accountant&#39;s review; do not self-host your only copy of financial records without backups.</li>
+<li><strong>Invoicing:</strong> Invoice Ninja or a simple document workflow, with a payment processor that handles tax and fraud.</li>
+<li><strong>Automation:</strong> n8n for scheduled backups and reminders; keep it inside your network.</li>
+<li><strong>Publishing:</strong> a static site on GitHub Pages, a newsletter tool with exportable subscribers, and your own domain.</li>
+</ul>
+
+<p>Open-source software shifts cost from licenses to maintenance. That is a good trade only if you will actually maintain it. Keep automatic backups, update on a schedule, and write down how to restore.</p>
+<h2 id="try-this-now">Try this now</h2>
+<ol>
+<li>Install Ollama and run one small model on a public-domain document. Note the speed and quality on your hardware.</li>
+<li>Choose one private workflow that would benefit from local processing—and verify you can do it without uploading sensitive data.</li>
+<li>Pick one open-source tool for your business back office. Check its license, backup path, and update process before importing real data.</li>
+<li>Write down your hybrid rule: &quot;Local for X, free tier for Y, paid API for Z.&quot; If you cannot name X, Y, and Z, you are not ready to buy hardware.</li>
+</ol>
+
+<p>Next: the bill-safety system. This is the chapter to reread before you add a payment method to anything.</p>
+      </div>
+      <aside class="chapter-safety-note">
+        <span class="chapter-safety-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+        <div>
+          <h2>The habit behind the list</h2>
+          <p>Offers change. A dated check, a tested limit, and a cancel path do not. Use the tracker before you use the trial.</p>
+        </div>
+        <a class="button button-secondary" href="tracker.html">Open the tracker</a>
+      </aside>
+      <nav class="chapter-pager" aria-label="Chapter navigation">
+        <a class="pager-card pager-card--previous" href="06-nonprofit-and-public-good.html">
+  <span class="pager-direction">Previous</span>
+  <span class="pager-label">Chapter 06</span>
+  <span class="pager-title">Nonprofit programs and the LLC boundary</span>
+  <span class="pager-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg></span>
+</a>
+        <a class="pager-card pager-card--next" href="08-avoid-surprise-bills.html">
+  <span class="pager-direction">Next</span>
+  <span class="pager-label">Chapter 08</span>
+  <span class="pager-title">Avoid surprise bills</span>
+  <span class="pager-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+</a>
+      </nav>
+    </div>
+  </div>
+</article>
+  </main>
+  <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html" aria-label="The Free Tier Field Guide, home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+        <span class="brand-copy">
+          <span class="brand-kicker">Asdale Dynamics</span>
+          <span class="brand-title">The Free Tier Field Guide</span>
+        </span>
+      </a>
+      <p>Free AI, cloud, and developer offers, with the catch included.</p>
+      <p class="footer-small">Plain English. Dated facts. A cancel date before the card.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <a href="guide.html">The guide</a>
+      <a href="finder.html">Program finder</a>
+      <a href="tracker.html">Tracker &amp; reminders</a>
+      <a href="sources.html">Sources &amp; changes</a>
+    </div>
+    <div class="footer-links">
+      <h2>Read before signing up</h2>
+      <a href="08-avoid-surprise-bills.html">Avoid surprise bills</a>
+      <a href="07-open-source-alternatives.html">Run AI locally</a>
+      <a href="free-credit-tracker-template.csv" download>Download the tracker</a>
+    </div>
+    <div class="footer-note">
+      <h2>The short rule</h2>
+      <p>No card without a hard cap, a real job, and a dated exit.</p>
+      <time class="footer-stamp" datetime="2026-10-22">Checked October 22, 2026</time>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>Copyright (c) 2026 Asdale Dynamics, LLC. All rights reserved.</p>
+    <p>Educational material only—not financial, legal, tax, medical, or compliance advice. Offers and terms change—verify with the provider.</p>
+  </div>
+</footer>
+</body>
+</html>

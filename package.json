@@ -1,0 +1,17 @@
+{
+  "name": "free-credits-and-trials-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A practical field guide to free AI credits, cloud trials, startup/student/nonprofit programs, open-source alternatives, and bill safety.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node --test tests/ && node scripts/verify.mjs",
+    "verify": "node scripts/verify.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

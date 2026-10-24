@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Free Tier Field Guide: free credits, real limits, no surprise bills</title>
+  <meta name="description" content="A plain-English guide to free AI, cloud, and developer credits, trials, and open-source alternatives—and how to use them without a surprise bill.">
+  <meta name="author" content="Asdale Dynamics, LLC">
+  <meta name="theme-color" content="#173b32">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Free Tier Field Guide">
+  <meta property="og:title" content="The Free Tier Field Guide: free credits, real limits, no surprise bills">
+  <meta property="og:description" content="A plain-English guide to free AI, cloud, and developer credits, trials, and open-source alternatives—and how to use them without a surprise bill.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<symbol id="icon-arrow-right" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h13M11 5l5 5-5 5"/></symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10H4m5-5-5 5 5 5"/></symbol>
+<symbol id="icon-external" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3.5h5.5V9M16.5 3.5 8.5 11.5M15 12.5V17H3V5h4.5"/></symbol>
+<symbol id="icon-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 4.3 4.2L17 4.5"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l3 1.8"/></symbol>
+<symbol id="icon-download" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.8v10m0 0 4-4m-4 4-4-4M3 16.8h14"/></symbol>
+<symbol id="icon-search" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.3"/><path d="m12.5 12.5 4 4"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.4 17 5v4.6c0 4-2.9 6.8-7 8-4.1-1.2-7-4-7-8V5l7-2.6Z"/><path d="m6.8 9.8 2.1 2.1 4.4-4.4"/></symbol>
+<symbol id="icon-spark" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5c.4 4.8 2.7 7.1 7.5 7.5-4.8.4-7.1 2.7-7.5 7.5-.4-4.8-2.7-7.1-7.5-7.5 4.8-.4 7.1-2.7 7.5-7.5Z"/></symbol>
+<symbol id="icon-cloud" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 15.8h7.6a3.8 3.8 0 0 0 .5-7.6 5.1 5.1 0 0 0-9.8 1.1 3.3 3.3 0 0 0 1.7 6.5Z"/></symbol>
+<symbol id="icon-terminal" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2"/><path d="m6 7 3 3-3 3m6.5 0H14"/></symbol>
+<symbol id="icon-book" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5h5.2c1 0 1.8.8 1.8 1.8v11.2c0-1.1-.8-2-1.8-2H3V3.5Zm14 0h-5.2c-1 0-1.8.8-1.8 1.8v11.2c0-1.1.8-2 1.8-2H17V3.5Z"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M6.5 2.8v3.4M13.5 2.8v3.4M3 8.2h14m-10.3 3.3h2v2h-2z"/></symbol>
+<symbol id="icon-file" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2.8h6l4 4v10.4H5V2.8Z"/><path d="M11 2.8v4h4M7.8 11h4.4m-4.4 3h4.4"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 18 17H2L10 3Z"/><path d="M10 8v4m0 2.6v.1"/></symbol>
+<symbol id="icon-chevron-down" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7.5 5 5 5-5"/></symbol>
+</svg>
+  <div class="trust-bar">
+  <div class="container trust-inner">
+    <p class="trust-left"><span class="trust-signal" aria-hidden="true"></span>Independent, dated, no affiliate links</p>
+    <p class="trust-right">Offers checked <time datetime="2026-10-22">October 22, 2026</time></p>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="The Free Tier Field Guide, home">
+      <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+      <span class="brand-copy">
+        <span class="brand-kicker">Asdale Dynamics</span>
+        <span class="brand-title">The Free Tier Field Guide</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="guide.html">The guide</a><a href="finder.html">Program finder</a><a href="tracker.html">Tracker</a><a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+  <main id="main">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-rule"></span>An Asdale Dynamics field guide</p>
+      <h1>Free credits.<br>Real limits.<br><span class="hero-highlight">No surprise bills.</span></h1>
+      <p class="hero-lede">Use AI, cloud, and developer offers with your eyes open. Learn what each free tier really includes, what it costs in data or time, and how to set a clean exit before the meter starts.</p>
+      <div class="button-row">
+  <a class="button button-primary" href="finder.html">Find a free program<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+  <a class="button button-secondary" href="guide.html">Read the guide</a>
+</div>
+      <ul class="hero-stats" aria-label="What is inside the guide">
+        <li><strong>36</strong><span>offers checked<br>by hand</span></li>
+        <li><strong>9</strong><span>short chapters<br>plain English</span></li>
+        <li><strong>0</strong><span>affiliate links<br>or sponsored spots</span></li>
+      </ul>
+    </div>
+    <aside class="promise-panel" aria-labelledby="promise-title">
+      <div class="promise-top">
+        <span>Before “Activate”</span>
+        <span class="promise-tag">Field note 01</span>
+      </div>
+      <h2 id="promise-title">The three-line<br>promise</h2>
+      <ol class="promise-list">
+        <li>
+          <span class="promise-number">01</span>
+          <span><strong>A real job</strong><small>A free account is not a plan. Name the one task it serves.</small></span>
+        </li>
+        <li>
+          <span class="promise-number">02</span>
+          <span><strong>A hard cap</strong><small>Turn on the limit that blocks spend, not just the alert.</small></span>
+        </li>
+        <li>
+          <span class="promise-number">03</span>
+          <span><strong>A cancel date</strong><small>Write it down before the card and put it on the calendar.</small></span>
+        </li>
+      </ol>
+      <p class="promise-foot">If a provider can charge you,<br>it gets all three.</p>
+      <a class="text-link" href="08-avoid-surprise-bills.html">Read the bill-safety playbook <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-paths">
+  <div class="container">
+    <header class="section-heading">
+  <div class="section-heading-main">
+    <p class="eyebrow">Start where you are</p>
+    <h2>A safe first move,<br>whatever you need.</h2>
+  </div>
+  <div class="section-heading-side">
+    <p>You do not need thirty accounts. Pick one useful job, give it a limit, and know how to walk away.</p>
+    
+  </div>
+</header>
+    <div class="path-grid">
+      <a class="path-card" href="finder.html?category=AI%20API">
+        <span class="path-card-top"><span class="path-number">01</span><span class="path-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-spark"></use></svg></span></span>
+        <span class="path-kicker">For a first API key</span>
+        <span class="path-title">Find a free AI allowance</span>
+        <span class="path-description">Compare real free tiers, their rate limits, and the data trade-off that comes with them.</span>
+        <span class="text-link">Browse AI APIs <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+      </a>
+      <a class="path-card" href="finder.html?category=Cloud">
+        <span class="path-card-top"><span class="path-number">02</span><span class="path-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-cloud"></use></svg></span></span>
+        <span class="path-kicker">For a cloud experiment</span>
+        <span class="path-title">Trial without leftovers</span>
+        <span class="path-description">See which cloud offers need a card, what expires, and where forgotten resources hide.</span>
+        <span class="text-link">Explore cloud offers <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+      </a>
+      <a class="path-card" href="07-open-source-alternatives.html">
+        <span class="path-card-top"><span class="path-number">03</span><span class="path-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-terminal"></use></svg></span></span>
+        <span class="path-kicker">For privacy or offline work</span>
+        <span class="path-title">Run a model locally</span>
+        <span class="path-description">Skip the per-token meter. Understand the hardware, maintenance, and security costs instead.</span>
+        <span class="text-link">Read the local-first chapter <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+      </a>
+      <a class="path-card" href="08-avoid-surprise-bills.html">
+        <span class="path-card-top"><span class="path-number">04</span><span class="path-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span></span>
+        <span class="path-kicker">For peace of mind</span>
+        <span class="path-title">Build a clean exit</span>
+        <span class="path-description">Set native caps, test them, save the cancel link, and put the decision on your calendar.</span>
+        <span class="text-link">Open the bill-safety playbook <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="safety-feature">
+  <div class="container safety-feature-grid">
+    <div class="safety-feature-copy">
+      <p class="eyebrow eyebrow--light">The rule that saves the most money</p>
+      <h2>An alert tells you the house is on fire.<br><span>A hard cap is the sprinkler.</span></h2>
+      <p>Most dashboards are good at sending email. That is not the same as stopping usage. Before you trust a guardrail, find out whether it blocks the request—and test it with a tiny limit.</p>
+      <a class="button button-light" href="08-avoid-surprise-bills.html#alert-versus-brake">Learn the difference <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+    </div>
+    <div class="wallet-card" aria-label="Credits, alerts, and hard caps compared">
+      <div class="wallet-head">
+        <span>The two-wallet mistake</span>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-alert"></use></svg>
+      </div>
+      <div class="wallet-row">
+        <span class="wallet-label">Credits</span>
+        <p>A dollar balance. It can run out, or the account can start charging your card.</p>
+        <span class="wallet-tag">Not a cap</span>
+      </div>
+      <div class="wallet-row">
+        <span class="wallet-label">Rate limits</span>
+        <p>They control how fast you can go, not the total monthly damage.</p>
+        <span class="wallet-tag">Not a cap</span>
+      </div>
+      <div class="wallet-row">
+        <span class="wallet-label">Alerts</span>
+        <p>They notify you after a threshold. Useful, but they do not stop the request.</p>
+        <span class="wallet-tag">Not a brake</span>
+      </div>
+      <div class="wallet-rule">Only a hard cap, quota, or tested block stops usage. <strong>Test yours.</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-categories">
+  <div class="container">
+    <header class="section-heading">
+  <div class="section-heading-main">
+    <p class="eyebrow">What kind of free?</p>
+    <h2>Six shapes of an offer.</h2>
+  </div>
+  <div class="section-heading-side">
+    <p>A rate-limited API, an expiring cloud trial, a student benefit, and local software are not interchangeable. Browse them by the decision you are actually making.</p>
+    <a class="button button-secondary" href="finder.html">See all 36 offers <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+  </div>
+</header>
+    <div class="category-grid">
+      <a class="category-card category-card--ai-api" href="finder.html?category=AI%20API">
+  <span class="category-card-top">
+    <span class="category-count">7 offers</span>
+    <span class="category-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+  <span class="category-title">AI APIs</span>
+  <span class="category-blurb">Real developer allowances, rate limits, and data trade-offs.</span>
+  <span class="category-note">A free API is a lab bench, not a budget.</span>
+</a>
+<a class="category-card category-card--cloud" href="finder.html?category=Cloud">
+  <span class="category-card-top">
+    <span class="category-count">10 offers</span>
+    <span class="category-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+  <span class="category-title">Cloud &amp; hosting</span>
+  <span class="category-blurb">Trial credit, always-free limits, hosting, notebooks, and developer infrastructure.</span>
+  <span class="category-note">The resource you forget is the one that bills you.</span>
+</a>
+<a class="category-card category-card--startup" href="finder.html?category=Startup">
+  <span class="category-card-top">
+    <span class="category-count">5 offers</span>
+    <span class="category-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+  <span class="category-title">Startup programs</span>
+  <span class="category-blurb">Application-based credits for eligible young companies.</span>
+  <span class="category-note">Eligibility is narrower than the marketing suggests.</span>
+</a>
+<a class="category-card category-card--education" href="finder.html?category=Education">
+  <span class="category-card-top">
+    <span class="category-count">3 offers</span>
+    <span class="category-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+  <span class="category-title">Student &amp; education</span>
+  <span class="category-blurb">Verified learning benefits, their limits, and their expiry dates.</span>
+  <span class="category-note">Use learning tools for learning, not for the LLC.</span>
+</a>
+<a class="category-card category-card--nonprofit" href="finder.html?category=Nonprofit">
+  <span class="category-card-top">
+    <span class="category-count">4 offers</span>
+    <span class="category-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+  <span class="category-title">Nonprofit</span>
+  <span class="category-blurb">Charitable-status programs and the boundary an LLC must respect.</span>
+  <span class="category-note">Good intentions are not a 501(c)(3) determination.</span>
+</a>
+<a class="category-card category-card--local" href="finder.html?category=Local%20%2F%20open%20source">
+  <span class="category-card-top">
+    <span class="category-count">7 offers</span>
+    <span class="category-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+  <span class="category-title">Local &amp; open source</span>
+  <span class="category-blurb">No per-token meter, but hardware, maintenance, and time are real.</span>
+  <span class="category-note">Free like a puppy, not free like a sample.</span>
+</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-chapters">
+  <div class="container">
+    <header class="section-heading">
+  <div class="section-heading-main">
+    <p class="eyebrow">The field guide</p>
+    <h2>Read the parts<br>you need.</h2>
+  </div>
+  <div class="section-heading-side">
+    <p>Start with the basics, go straight to local AI, or learn the bill-safety system. Every chapter is short enough for a coffee break.</p>
+    <a class="text-link" href="guide.html">See all 9 chapters <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+  </div>
+</header>
+    <div class="chapter-teaser-grid">
+      <a class="chapter-teaser" href="01-how-free-offers-work.html">
+  <span class="chapter-teaser-number">01</span>
+  <span class="chapter-teaser-content">
+    <span class="chapter-teaser-kicker">Chapter 01 · The basics</span>
+    <span class="chapter-teaser-title">How free offers really work</span>
+    <span class="chapter-teaser-description">The five kinds of free, what providers get in return, the questions to ask before signing up, and a simple decision rule.</span>
+    <span class="chapter-teaser-meta">8 min read <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+</a>
+<a class="chapter-teaser" href="07-open-source-alternatives.html">
+  <span class="chapter-teaser-number">07</span>
+  <span class="chapter-teaser-content">
+    <span class="chapter-teaser-kicker">Chapter 07 · Local-first</span>
+    <span class="chapter-teaser-title">Open-source and local alternatives</span>
+    <span class="chapter-teaser-description">Run useful AI without per-token bills, choose the right local tools, understand hardware and licenses, and avoid the hidden costs of self-hosting.</span>
+    <span class="chapter-teaser-meta">9 min read <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+</a>
+<a class="chapter-teaser" href="08-avoid-surprise-bills.html">
+  <span class="chapter-teaser-number">08</span>
+  <span class="chapter-teaser-content">
+    <span class="chapter-teaser-kicker">Chapter 08 · Bill safety</span>
+    <span class="chapter-teaser-title">Avoid surprise bills</span>
+    <span class="chapter-teaser-description">A practical system for budgets, hard caps, API-key hygiene, cancellation reminders, and monthly billing reviews.</span>
+    <span class="chapter-teaser-meta">9 min read <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+  </span>
+</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-featured">
+  <div class="container">
+    <header class="section-heading">
+  <div class="section-heading-main">
+    <p class="eyebrow">From the directory</p>
+    <h2>Three offers worth knowing.</h2>
+  </div>
+  <div class="section-heading-side">
+    <p>A useful free tier, a way to ship a static site, and a local-first escape hatch. Each entry includes the catch.</p>
+    <a class="button button-secondary" href="finder.html">Open the program finder <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+  </div>
+</header>
+    <div class="mini-program-grid">
+      <article class="mini-program">
+  <div class="mini-program-top">
+    <span class="mini-program-provider">Google</span>
+    <span class="badge badge-card badge-card--no-card">No card</span>
+  </div>
+  <h3><a href="finder.html#p-gemini-developer-api">Gemini Developer API</a></h3>
+  <p>A real free tier, with a data trade-off.</p>
+  <div class="mini-program-foot">
+    <span class="badge badge-status badge-status--open"><span class="badge-dot" aria-hidden="true"></span>Open at check</span>
+    <a class="text-link text-link--small" href="finder.html#p-gemini-developer-api">Read the entry <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+  </div>
+</article>
+<article class="mini-program">
+  <div class="mini-program-top">
+    <span class="mini-program-provider">Cloudflare</span>
+    <span class="badge badge-card badge-card--no-card">No card</span>
+  </div>
+  <h3><a href="finder.html#p-cloudflare-workers-ai">Cloudflare Workers AI</a></h3>
+  <p>Small edge AI features with a daily free allowance.</p>
+  <div class="mini-program-foot">
+    <span class="badge badge-status badge-status--open"><span class="badge-dot" aria-hidden="true"></span>Open at check</span>
+    <a class="text-link text-link--small" href="finder.html#p-cloudflare-workers-ai">Read the entry <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+  </div>
+</article>
+<article class="mini-program">
+  <div class="mini-program-top">
+    <span class="mini-program-provider">GitHub</span>
+    <span class="badge badge-card badge-card--no-card">No card</span>
+  </div>
+  <h3><a href="finder.html#p-github-pages">GitHub Pages</a></h3>
+  <p>Free static hosting for public repositories.</p>
+  <div class="mini-program-foot">
+    <span class="badge badge-status badge-status--open"><span class="badge-dot" aria-hidden="true"></span>Open at check</span>
+    <a class="text-link text-link--small" href="finder.html#p-github-pages">Read the entry <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+  </div>
+</article>
+    </div>
+    <p class="fine-print">Inclusion is not an endorsement. Offers are snapshots from October 22, 2026; verify the current terms with the provider before you sign up.</p>
+  </div>
+</section>
+
+<section class="closing-band">
+  <div class="container closing-grid">
+    <div>
+      <p class="eyebrow">The goal is not more accounts</p>
+      <h2>Keep the useful free stuff.<br><span>Lose the billing mystery.</span></h2>
+      <p>A good free trial helps you learn something and then lets you leave cleanly. Set the decision date before the momentum takes over.</p>
+      <div class="button-row">
+        <a class="button button-primary" href="finder.html">Browse every offer <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+        <a class="button button-secondary" href="tracker.html">Get the tracker</a>
+      </div>
+    </div>
+    <blockquote class="closing-quote">
+      <p>“Free is a starting point.<br>A budget is a business.”</p>
+      <footer>From Chapter 09 · Asdale Dynamics, LLC</footer>
+    </blockquote>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html" aria-label="The Free Tier Field Guide, home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+        <span class="brand-copy">
+          <span class="brand-kicker">Asdale Dynamics</span>
+          <span class="brand-title">The Free Tier Field Guide</span>
+        </span>
+      </a>
+      <p>Free AI, cloud, and developer offers, with the catch included.</p>
+      <p class="footer-small">Plain English. Dated facts. A cancel date before the card.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <a href="guide.html">The guide</a>
+      <a href="finder.html">Program finder</a>
+      <a href="tracker.html">Tracker &amp; reminders</a>
+      <a href="sources.html">Sources &amp; changes</a>
+    </div>
+    <div class="footer-links">
+      <h2>Read before signing up</h2>
+      <a href="08-avoid-surprise-bills.html">Avoid surprise bills</a>
+      <a href="07-open-source-alternatives.html">Run AI locally</a>
+      <a href="free-credit-tracker-template.csv" download>Download the tracker</a>
+    </div>
+    <div class="footer-note">
+      <h2>The short rule</h2>
+      <p>No card without a hard cap, a real job, and a dated exit.</p>
+      <time class="footer-stamp" datetime="2026-10-22">Checked October 22, 2026</time>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>Copyright (c) 2026 Asdale Dynamics, LLC. All rights reserved.</p>
+    <p>Educational material only—not financial, legal, tax, medical, or compliance advice. Offers and terms change—verify with the provider.</p>
+  </div>
+</footer>
+</body>
+</html>

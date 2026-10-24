@@ -1,0 +1,380 @@
+{
+  "checked": "2026-10-22",
+  "groups": [
+    {
+      "name": "AI APIs and developer tools",
+      "entries": [
+        {
+          "name": "Gemini Developer API pricing",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "note": "Free-tier scope, paid pricing, and the data-use note for free content."
+        },
+        {
+          "name": "Gemini API rate limits",
+          "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+          "note": "Current limits are model- and account-dependent; AI Studio is authoritative."
+        },
+        {
+          "name": "Groq rate limits",
+          "url": "https://console.groq.com/docs/rate-limits",
+          "note": "Free access and per-model, per-organization limits."
+        },
+        {
+          "name": "OpenRouter API limits",
+          "url": "https://openrouter.ai/docs/api-reference/limits",
+          "note": "Free-model caps and how credit history affects daily requests."
+        },
+        {
+          "name": "Cloudflare Workers AI pricing",
+          "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+          "note": "Neuron pricing and the daily free allocation."
+        },
+        {
+          "name": "Mistral usage limits",
+          "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
+          "note": "Free mode, admin limits, and data-use caveat."
+        },
+        {
+          "name": "Cohere rate limits",
+          "url": "https://docs.cohere.com/docs/rate-limits",
+          "note": "Trial versus production API keys."
+        },
+        {
+          "name": "NVIDIA Build",
+          "url": "https://build.nvidia.com/",
+          "note": "Hosted NIM endpoints and developer API keys."
+        },
+        {
+          "name": "Hugging Face Inference Providers pricing",
+          "url": "https://huggingface.co/docs/inference-providers/pricing",
+          "note": "Included monthly credits by account type; free accounts had none at check."
+        },
+        {
+          "name": "Together AI billing credits",
+          "url": "https://docs.together.ai/docs/billing-credits",
+          "note": "Prepaid credit model; no free trial at check."
+        },
+        {
+          "name": "GitHub Models retirement notice",
+          "url": "https://docs.github.com/en/github-models",
+          "note": "The playground, catalog, API, and BYOK were retired July 30, 2026."
+        },
+        {
+          "name": "Gemini Code Assist overview",
+          "url": "https://developers.google.com/gemini-code-assist/docs/overview",
+          "note": "Individual and organization coding-assistant plans, features, and limits."
+        },
+        {
+          "name": "Cursor pricing",
+          "url": "https://cursor.com/pricing",
+          "note": "Free and paid editor plans; the legacy student discount closed to new sign-ups in 2026."
+        }
+      ]
+    },
+    {
+      "name": "Cloud and hosting",
+      "entries": [
+        {
+          "name": "AWS Free Tier",
+          "url": "https://aws.amazon.com/free/",
+          "note": "Current entry point and offer overview."
+        },
+        {
+          "name": "AWS Free Tier documentation",
+          "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html",
+          "note": "Free account plan versus Paid account plan, credits, and six-month limit."
+        },
+        {
+          "name": "Google Cloud free features",
+          "url": "https://docs.cloud.google.com/free/docs/free-cloud-features",
+          "note": "$300/90-day trial and Always Free services."
+        },
+        {
+          "name": "Azure free account",
+          "url": "https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account",
+          "note": "$200/30 days, card verification, and trial-end behavior."
+        },
+        {
+          "name": "Oracle Always Free resources",
+          "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+          "note": "Compute, database, idle reclamation, and storage limits."
+        },
+        {
+          "name": "Vercel pricing",
+          "url": "https://vercel.com/pricing",
+          "note": "Hobby plan limits and the no-commercial-use restriction."
+        },
+        {
+          "name": "Render pricing",
+          "url": "https://render.com/pricing",
+          "note": "Free web services, sleeping behavior, and resource limits."
+        },
+        {
+          "name": "GitHub Pages documentation",
+          "url": "https://docs.github.com/en/pages",
+          "note": "Static hosting from public repositories."
+        },
+        {
+          "name": "Hugging Face Spaces",
+          "url": "https://huggingface.co/docs/hub/spaces-overview",
+          "note": "Free CPU hardware, upgrades, and usage limits."
+        },
+        {
+          "name": "Google Colab",
+          "url": "https://colab.research.google.com/",
+          "note": "Hosted notebooks; GPU access varies and is not guaranteed."
+        },
+        {
+          "name": "Kaggle notebooks",
+          "url": "https://www.kaggle.com/docs/notebooks",
+          "note": "Notebook environment, verification, and accelerator quotas."
+        }
+      ]
+    },
+    {
+      "name": "Developer infrastructure",
+      "entries": [
+        {
+          "name": "GitHub Actions billing",
+          "url": "https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions",
+          "note": "Included minutes and storage, runner-size multipliers, and paid usage."
+        },
+        {
+          "name": "Cloudflare Workers limits",
+          "url": "https://developers.cloudflare.com/workers/platform/limits/",
+          "note": "Requests, CPU time, and account-level limits on the free plan."
+        },
+        {
+          "name": "Cloudflare R2 pricing",
+          "url": "https://developers.cloudflare.com/r2/pricing/",
+          "note": "Object storage, operations, and egress allowances."
+        },
+        {
+          "name": "Supabase pricing",
+          "url": "https://supabase.com/pricing",
+          "note": "Free project limits, inactivity behavior, and paid plan differences."
+        },
+        {
+          "name": "Neon pricing",
+          "url": "https://neon.com/pricing",
+          "note": "Free database allowance, scale-to-zero, and storage/compute limits."
+        },
+        {
+          "name": "MongoDB Atlas",
+          "url": "https://www.mongodb.com/atlas",
+          "note": "Free cluster option, storage limits, and shared-cluster caveats."
+        },
+        {
+          "name": "Sentry pricing",
+          "url": "https://sentry.io/pricing/",
+          "note": "Event quotas, retention, and seat limits."
+        }
+      ]
+    },
+    {
+      "name": "Startup programs",
+      "entries": [
+        {
+          "name": "AWS for Startups",
+          "url": "https://aws.amazon.com/startups/",
+          "note": "Activate program overview and application entry point."
+        },
+        {
+          "name": "Google for Startups Cloud benefits",
+          "url": "https://cloud.google.com/startup/benefits",
+          "note": "Pre-funded, funded, and AI-first tiers and eligibility."
+        },
+        {
+          "name": "Microsoft for Startups: getting started",
+          "url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/getting-started-mfs",
+          "note": "Starting credits and the path to higher tiers."
+        },
+        {
+          "name": "Claude for Startups",
+          "url": "https://claude.com/programs/startups",
+          "note": "Cohort status, partner offers, and eligibility."
+        },
+        {
+          "name": "OpenAI for Startups",
+          "url": "https://openai.com/business/why-openai/startups/",
+          "note": "Partner VC route and startup benefits."
+        },
+        {
+          "name": "NVIDIA Inception",
+          "url": "https://www.nvidia.com/en-us/startups/",
+          "note": "Startup membership and partner benefits."
+        },
+        {
+          "name": "Indiana Small Business Development Center",
+          "url": "https://isbdc.org/",
+          "note": "Indiana small-business advising."
+        },
+        {
+          "name": "Elevate Ventures",
+          "url": "https://elevateventures.com/",
+          "note": "Indiana founder and investor network."
+        },
+        {
+          "name": "gener8tor gBETA",
+          "url": "https://www.gener8tor.com/gbeta",
+          "note": "Free accelerator cohorts; check current markets and dates."
+        }
+      ]
+    },
+    {
+      "name": "Student and education programs",
+      "entries": [
+        {
+          "name": "GitHub Student Developer Pack",
+          "url": "https://education.github.com/pack",
+          "note": "Benefits, verification, and current partners."
+        },
+        {
+          "name": "GitHub Copilot plans",
+          "url": "https://docs.github.com/en/copilot/get-started/plans",
+          "note": "Copilot Free, Pro, and student plan limits."
+        },
+        {
+          "name": "Gemini for Students",
+          "url": "https://gemini.google/students/",
+          "note": "Current student offer and eligibility."
+        },
+        {
+          "name": "Google's Gemini student announcement",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/",
+          "note": "August 19, 2026 announcement of the one-year offer."
+        },
+        {
+          "name": "Azure for Students",
+          "url": "https://azure.microsoft.com/en-us/free/students",
+          "note": "$100 credit, renewal, and academic eligibility."
+        },
+        {
+          "name": "JetBrains Education",
+          "url": "https://www.jetbrains.com/community/education/",
+          "note": "Student and teacher educational licenses."
+        },
+        {
+          "name": "Cursor student discount update",
+          "url": "https://cursor.com/help/account-and-billing/student-discount",
+          "note": "New sign-ups discontinued June 25, 2026."
+        }
+      ]
+    },
+    {
+      "name": "Nonprofit programs",
+      "entries": [
+        {
+          "name": "Google for Nonprofits",
+          "url": "https://www.google.com/nonprofits/",
+          "note": "Program entry point and tool eligibility overview."
+        },
+        {
+          "name": "Google for Nonprofits U.S. eligibility",
+          "url": "https://support.google.com/nonprofits/answer/3215869?hl=en",
+          "note": "U.S. charitable status requirements."
+        },
+        {
+          "name": "Google Ad Grants",
+          "url": "https://www.google.com/grants/",
+          "note": "Up to $10,000 per month in eligible search advertising."
+        },
+        {
+          "name": "Microsoft for Nonprofits eligibility",
+          "url": "https://www.microsoft.com/en-us/nonprofits/eligibility",
+          "note": "Validation, grants, and discount eligibility."
+        },
+        {
+          "name": "AWS Nonprofit Credit Program",
+          "url": "https://aws.amazon.com/government-education/nonprofits/nonprofit-credit-program/",
+          "note": "Promotional credit details and application route."
+        },
+        {
+          "name": "TechSoup",
+          "url": "https://www.techsoup.org/",
+          "note": "Validation and donated/discounted software."
+        }
+      ]
+    },
+    {
+      "name": "Budgets and billing controls",
+      "entries": [
+        {
+          "name": "OpenAI project limits",
+          "url": "https://help.openai.com/en/articles/9186755-managing-your-work-in-the-api-platform-with-projects",
+          "note": "Project budgets, alerts, and the optional hard spend limit."
+        },
+        {
+          "name": "Claude API pricing and billing",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "note": "Current API pricing and billing documentation."
+        },
+        {
+          "name": "Google Cloud budgets",
+          "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+          "note": "Budgets are alerts unless you configure actions; they do not cap spend on their own."
+        },
+        {
+          "name": "AWS budget actions",
+          "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-controls.html",
+          "note": "Actions that can apply policies or target resources."
+        },
+        {
+          "name": "Azure budgets",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+          "note": "Budget alerts, action groups, and cost-data delay."
+        },
+        {
+          "name": "GitHub Copilot billing announcement",
+          "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+          "note": "Usage-based billing introduced in 2026."
+        }
+      ]
+    },
+    {
+      "name": "Local and open source",
+      "entries": [
+        {
+          "name": "Ollama",
+          "url": "https://ollama.com/",
+          "note": "Local model runner and official downloads."
+        },
+        {
+          "name": "LM Studio",
+          "url": "https://lmstudio.ai/",
+          "note": "Desktop application for local models."
+        },
+        {
+          "name": "Open WebUI",
+          "url": "https://github.com/open-webui/open-webui",
+          "note": "Self-hosted chat interface; check the current license."
+        },
+        {
+          "name": "Aider",
+          "url": "https://aider.chat/",
+          "note": "Open-source terminal pair programmer."
+        },
+        {
+          "name": "Continue",
+          "url": "https://www.continue.dev/",
+          "note": "Open-source IDE coding assistant."
+        },
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/comfyanonymous/ComfyUI",
+          "note": "Node-based local image generation."
+        },
+        {
+          "name": "Whisper",
+          "url": "https://github.com/openai/whisper",
+          "note": "Open-source speech recognition models."
+        },
+        {
+          "name": "n8n",
+          "url": "https://n8n.io/",
+          "note": "Workflow automation with a Sustainable Use License, not OSI open source."
+        }
+      ]
+    }
+  ]
+}

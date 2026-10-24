@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tracker and calendar reminders | The Free Tier Field Guide</title>
+  <meta name="description" content="Download a free-tier tracker CSV and generate a local calendar reminder for the date you will decide to keep, downgrade, or cancel a trial.">
+  <meta name="author" content="Asdale Dynamics, LLC">
+  <meta name="theme-color" content="#173b32">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Free Tier Field Guide">
+  <meta property="og:title" content="Tracker and calendar reminders | The Free Tier Field Guide">
+  <meta property="og:description" content="Download a free-tier tracker CSV and generate a local calendar reminder for the date you will decide to keep, downgrade, or cancel a trial.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body class="page-tracker">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<symbol id="icon-arrow-right" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h13M11 5l5 5-5 5"/></symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10H4m5-5-5 5 5 5"/></symbol>
+<symbol id="icon-external" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3.5h5.5V9M16.5 3.5 8.5 11.5M15 12.5V17H3V5h4.5"/></symbol>
+<symbol id="icon-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 4.3 4.2L17 4.5"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l3 1.8"/></symbol>
+<symbol id="icon-download" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.8v10m0 0 4-4m-4 4-4-4M3 16.8h14"/></symbol>
+<symbol id="icon-search" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.3"/><path d="m12.5 12.5 4 4"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.4 17 5v4.6c0 4-2.9 6.8-7 8-4.1-1.2-7-4-7-8V5l7-2.6Z"/><path d="m6.8 9.8 2.1 2.1 4.4-4.4"/></symbol>
+<symbol id="icon-spark" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5c.4 4.8 2.7 7.1 7.5 7.5-4.8.4-7.1 2.7-7.5 7.5-.4-4.8-2.7-7.1-7.5-7.5 4.8-.4 7.1-2.7 7.5-7.5Z"/></symbol>
+<symbol id="icon-cloud" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 15.8h7.6a3.8 3.8 0 0 0 .5-7.6 5.1 5.1 0 0 0-9.8 1.1 3.3 3.3 0 0 0 1.7 6.5Z"/></symbol>
+<symbol id="icon-terminal" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2"/><path d="m6 7 3 3-3 3m6.5 0H14"/></symbol>
+<symbol id="icon-book" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5h5.2c1 0 1.8.8 1.8 1.8v11.2c0-1.1-.8-2-1.8-2H3V3.5Zm14 0h-5.2c-1 0-1.8.8-1.8 1.8v11.2c0-1.1.8-2 1.8-2H17V3.5Z"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M6.5 2.8v3.4M13.5 2.8v3.4M3 8.2h14m-10.3 3.3h2v2h-2z"/></symbol>
+<symbol id="icon-file" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2.8h6l4 4v10.4H5V2.8Z"/><path d="M11 2.8v4h4M7.8 11h4.4m-4.4 3h4.4"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 18 17H2L10 3Z"/><path d="M10 8v4m0 2.6v.1"/></symbol>
+<symbol id="icon-chevron-down" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7.5 5 5 5-5"/></symbol>
+</svg>
+  <div class="trust-bar">
+  <div class="container trust-inner">
+    <p class="trust-left"><span class="trust-signal" aria-hidden="true"></span>Independent, dated, no affiliate links</p>
+    <p class="trust-right">Offers checked <time datetime="2026-10-22">October 22, 2026</time></p>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="The Free Tier Field Guide, home">
+      <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+      <span class="brand-copy">
+        <span class="brand-kicker">Asdale Dynamics</span>
+        <span class="brand-title">The Free Tier Field Guide</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="guide.html">The guide</a><a href="finder.html">Program finder</a><a href="tracker.html" class="is-active" aria-current="page">Tracker</a><a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+  <main id="main">
+<section class="page-hero tracker-hero">
+  <div class="container page-hero-grid">
+    <div class="page-hero-copy">
+      <p class="eyebrow"><span class="eyebrow-rule"></span>Make the careful choice repeatable</p>
+      <h1>Track the trial.<br>Keep the exit.</h1>
+      <p class="page-lede">Two dates prevent most billing surprises: when the offer ends, and when you will decide. Put both somewhere you will actually look.</p>
+    </div>
+    <aside class="tracker-hero-card">
+      <p class="rail-label">The rule</p>
+      <p>If a tool has your card, the tracker needs its cancel URL and a decide-by date.</p>
+      <span>No passwords. No API keys. No card numbers.</span>
+    </aside>
+  </div>
+</section>
+
+<section class="section tracker-section">
+  <div class="container">
+    <div class="download-panel">
+      <span class="download-panel-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-file"></use></svg></span>
+      <div class="download-panel-copy">
+        <p class="eyebrow">The plain CSV</p>
+        <h2>Your free-tier flight log.</h2>
+        <p>19 columns for eligibility, renewal dates, spend caps, cancellation links, and the one job the tool is meant to do. The two example rows are fictional—replace them with your own.</p>
+      </div>
+      <div class="download-panel-action">
+        <a class="button button-primary" href="free-credit-tracker-template.csv" download>Download tracker CSV <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg></a>
+        <span>Opens in any spreadsheet. No account needed.</span>
+      </div>
+    </div>
+
+    <div class="tracker-grid">
+      <section class="calendar-panel" aria-labelledby="calendar-title">
+        <div class="panel-heading">
+          <span class="panel-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-calendar"></use></svg></span>
+          <div>
+            <p class="eyebrow">A reminder you will actually see</p>
+            <h2 id="calendar-title">Make a decide-by event.</h2>
+          </div>
+        </div>
+        <p class="panel-lede">This creates an all-day calendar event with a one-day-before alert. It happens entirely in your browser; nothing is sent anywhere.</p>
+        <form class="calendar-form" id="calendar-form" novalidate>
+          <div class="form-field">
+            <label for="reminder-program">Program name <span>Required</span></label>
+            <input id="reminder-program" name="program" type="text" maxlength="100" autocomplete="off" placeholder="Example: AWS Free account plan" required>
+            <p class="field-help">Use the same name as your tracker row.</p>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="reminder-date">Decide by <span>Required</span></label>
+              <input id="reminder-date" name="date" type="date" required>
+              <p class="field-help">Pick a date before renewal or trial end.</p>
+            </div>
+            <div class="form-field">
+              <label for="reminder-note">Note <span>Optional</span></label>
+              <input id="reminder-note" name="note" type="text" maxlength="180" autocomplete="off" placeholder="Export the demo, then decide">
+              <p class="field-help">Appears inside the calendar event.</p>
+            </div>
+          </div>
+          <p class="form-error" id="calendar-error" role="alert" hidden></p>
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Download .ics reminder <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg></button>
+            <span>Works with Google Calendar, Apple Calendar, Outlook, and most calendar apps.</span>
+          </div>
+          <p class="form-status" id="calendar-status" role="status" aria-live="polite"></p>
+        </form>
+        <noscript>
+          <div class="inline-notice">The reminder generator needs JavaScript. You can still use the CSV tracker and your calendar app directly.</div>
+        </noscript>
+      </section>
+
+      <aside class="calendar-aside">
+        <div class="calendar-preview">
+          <div class="calendar-preview-top">
+            <span>ALL-DAY EVENT</span>
+            <span class="calendar-preview-dot" aria-hidden="true"></span>
+          </div>
+          <p class="calendar-preview-label">Reminder preview</p>
+          <h3 id="calendar-preview-title">Decide: keep or cancel your program</h3>
+          <p class="calendar-preview-date" id="calendar-preview-date">Choose a date to preview it</p>
+          <p class="calendar-preview-copy">Check usage and export anything you need. Cancel, downgrade, or commit before the renewal.</p>
+          <div class="calendar-preview-rule"></div>
+          <span class="calendar-preview-alert"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-clock"></use></svg> Alert one day before</span>
+        </div>
+        <div class="aside-note">
+          <p class="rail-label">Why not just rely on the provider?</p>
+          <p>Because the email may be filtered, the dashboard may lag, and the trial clock keeps moving. A calendar event is a second, independent reminder.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section tracker-steps-section">
+  <div class="container">
+    <header class="section-heading">
+  <div class="section-heading-main">
+    <p class="eyebrow">How to use it</p>
+    <h2>A five-minute habit.</h2>
+  </div>
+  <div class="section-heading-side">
+    <p>The tracker is deliberately boring. That is what makes it useful when the renewal email arrives.</p>
+    
+  </div>
+</header>
+    <ol class="step-grid">
+      <li>
+        <span class="step-number">01</span>
+        <h3>One row per offer</h3>
+        <p>Record the official URL, eligibility, card status, and the exact job you want it to do.</p>
+      </li>
+      <li>
+        <span class="step-number">02</span>
+        <h3>Fill dates before the card</h3>
+        <p>Add the trial end, renewal date, and a decide-by date that leaves room to act.</p>
+      </li>
+      <li>
+        <span class="step-number">03</span>
+        <h3>Set the native control</h3>
+        <p>Turn on the provider's spend cap or quota, then test it with a deliberately tiny limit.</p>
+      </li>
+      <li>
+        <span class="step-number">04</span>
+        <h3>Review once a month</h3>
+        <p>Open the resource list, check the invoices, revoke unused keys, and close the row you finished.</p>
+      </li>
+    </ol>
+
+    <details class="field-dictionary">
+      <summary><span>Every tracker column, explained</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chevron-down"></use></svg></summary>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Column</th><th scope="col">What it is for</th></tr></thead>
+          <tbody><tr>
+  <th scope="row"><code>program_name</code><span>Program name</span></th>
+  <td>The offer or tool you are tracking.</td>
+</tr>
+<tr>
+  <th scope="row"><code>provider</code><span>Provider</span></th>
+  <td>The company or organization behind it.</td>
+</tr>
+<tr>
+  <th scope="row"><code>category</code><span>Category</span></th>
+  <td>AI API, Cloud, Startup, Education, Nonprofit, Local / open source, or Other.</td>
+</tr>
+<tr>
+  <th scope="row"><code>what_you_get</code><span>What you get</span></th>
+  <td>A short, factual summary of the free allowance.</td>
+</tr>
+<tr>
+  <th scope="row"><code>eligibility</code><span>Eligibility</span></th>
+  <td>Who qualifies. Write &#39;verify&#39; when you are unsure.</td>
+</tr>
+<tr>
+  <th scope="row"><code>official_url</code><span>Official URL</span></th>
+  <td>The provider&#39;s own page, not an affiliate link.</td>
+</tr>
+<tr>
+  <th scope="row"><code>date_checked</code><span>Date checked</span></th>
+  <td>The date you last reviewed the terms (YYYY-MM-DD).</td>
+</tr>
+<tr>
+  <th scope="row"><code>account_email</code><span>Account email</span></th>
+  <td>Use a dedicated business email you control.</td>
+</tr>
+<tr>
+  <th scope="row"><code>project_or_org_id</code><span>Project or org ID</span></th>
+  <td>Workspace, project, org, or account identifier.</td>
+</tr>
+<tr>
+  <th scope="row"><code>start_date</code><span>Start date</span></th>
+  <td>When the trial or credit began (YYYY-MM-DD).</td>
+</tr>
+<tr>
+  <th scope="row"><code>credit_expires_on</code><span>Credit expires</span></th>
+  <td>When the credit expires, if known.</td>
+</tr>
+<tr>
+  <th scope="row"><code>card_on_file</code><span>Card on file</span></th>
+  <td>yes or no. A card changes the risk.</td>
+</tr>
+<tr>
+  <th scope="row"><code>auto_renew_date</code><span>Auto-renew date</span></th>
+  <td>When a subscription renews or a trial converts.</td>
+</tr>
+<tr>
+  <th scope="row"><code>decide_by_date</code><span>Decide by</span></th>
+  <td>The date you will keep, downgrade, or cancel, before renewal.</td>
+</tr>
+<tr>
+  <th scope="row"><code>cancel_or_downgrade_url</code><span>Cancel or downgrade URL</span></th>
+  <td>The exact settings or help page you will need.</td>
+</tr>
+<tr>
+  <th scope="row"><code>monthly_budget_usd</code><span>Monthly budget</span></th>
+  <td>Your internal cap, even if the provider has no hard limit.</td>
+</tr>
+<tr>
+  <th scope="row"><code>alert_threshold_pct</code><span>Alert threshold</span></th>
+  <td>The alert percentage you configured, such as 25, 50, 75, or 90.</td>
+</tr>
+<tr>
+  <th scope="row"><code>status</code><span>Status</span></th>
+  <td>researching, active, expired, cancelled, or paid.</td>
+</tr>
+<tr>
+  <th scope="row"><code>notes</code><span>Notes</span></th>
+  <td>Data-use caveats, usage observations, support contact, or a cancellation confirmation number.</td>
+</tr></tbody>
+        </table>
+      </div>
+    </details>
+
+    <div class="privacy-callout">
+      <span class="privacy-callout-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+      <div>
+        <h2>Keep it useful, not sensitive.</h2>
+        <p>Use a dedicated business email and an account identifier—never a password, full card number, recovery code, or API key. Do not put patient, student, or client information in the tracker. This template is recordkeeping, not a secret store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html" aria-label="The Free Tier Field Guide, home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+        <span class="brand-copy">
+          <span class="brand-kicker">Asdale Dynamics</span>
+          <span class="brand-title">The Free Tier Field Guide</span>
+        </span>
+      </a>
+      <p>Free AI, cloud, and developer offers, with the catch included.</p>
+      <p class="footer-small">Plain English. Dated facts. A cancel date before the card.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <a href="guide.html">The guide</a>
+      <a href="finder.html">Program finder</a>
+      <a href="tracker.html">Tracker &amp; reminders</a>
+      <a href="sources.html">Sources &amp; changes</a>
+    </div>
+    <div class="footer-links">
+      <h2>Read before signing up</h2>
+      <a href="08-avoid-surprise-bills.html">Avoid surprise bills</a>
+      <a href="07-open-source-alternatives.html">Run AI locally</a>
+      <a href="free-credit-tracker-template.csv" download>Download the tracker</a>
+    </div>
+    <div class="footer-note">
+      <h2>The short rule</h2>
+      <p>No card without a hard cap, a real job, and a dated exit.</p>
+      <time class="footer-stamp" datetime="2026-10-22">Checked October 22, 2026</time>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>Copyright (c) 2026 Asdale Dynamics, LLC. All rights reserved.</p>
+    <p>Educational material only—not financial, legal, tax, medical, or compliance advice. Offers and terms change—verify with the provider.</p>
+  </div>
+</footer>
+</body>
+</html>

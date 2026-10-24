@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free AI API credits | The Free Tier Field Guide</title>
+  <meta name="description" content="Where real free API allowances exist in 2026, what they cost in data and limits, and how to build a portable first prototype.">
+  <meta name="author" content="Asdale Dynamics, LLC">
+  <meta name="theme-color" content="#173b32">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Free Tier Field Guide">
+  <meta property="og:title" content="Free AI API credits | The Free Tier Field Guide">
+  <meta property="og:description" content="Where real free API allowances exist in 2026, what they cost in data and limits, and how to build a portable first prototype.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body class="page-chapter-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<symbol id="icon-arrow-right" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h13M11 5l5 5-5 5"/></symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10H4m5-5-5 5 5 5"/></symbol>
+<symbol id="icon-external" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3.5h5.5V9M16.5 3.5 8.5 11.5M15 12.5V17H3V5h4.5"/></symbol>
+<symbol id="icon-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 4.3 4.2L17 4.5"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l3 1.8"/></symbol>
+<symbol id="icon-download" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.8v10m0 0 4-4m-4 4-4-4M3 16.8h14"/></symbol>
+<symbol id="icon-search" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.3"/><path d="m12.5 12.5 4 4"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.4 17 5v4.6c0 4-2.9 6.8-7 8-4.1-1.2-7-4-7-8V5l7-2.6Z"/><path d="m6.8 9.8 2.1 2.1 4.4-4.4"/></symbol>
+<symbol id="icon-spark" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5c.4 4.8 2.7 7.1 7.5 7.5-4.8.4-7.1 2.7-7.5 7.5-.4-4.8-2.7-7.1-7.5-7.5 4.8-.4 7.1-2.7 7.5-7.5Z"/></symbol>
+<symbol id="icon-cloud" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 15.8h7.6a3.8 3.8 0 0 0 .5-7.6 5.1 5.1 0 0 0-9.8 1.1 3.3 3.3 0 0 0 1.7 6.5Z"/></symbol>
+<symbol id="icon-terminal" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2"/><path d="m6 7 3 3-3 3m6.5 0H14"/></symbol>
+<symbol id="icon-book" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5h5.2c1 0 1.8.8 1.8 1.8v11.2c0-1.1-.8-2-1.8-2H3V3.5Zm14 0h-5.2c-1 0-1.8.8-1.8 1.8v11.2c0-1.1.8-2 1.8-2H17V3.5Z"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M6.5 2.8v3.4M13.5 2.8v3.4M3 8.2h14m-10.3 3.3h2v2h-2z"/></symbol>
+<symbol id="icon-file" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2.8h6l4 4v10.4H5V2.8Z"/><path d="M11 2.8v4h4M7.8 11h4.4m-4.4 3h4.4"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 18 17H2L10 3Z"/><path d="M10 8v4m0 2.6v.1"/></symbol>
+<symbol id="icon-chevron-down" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7.5 5 5 5-5"/></symbol>
+</svg>
+  <div class="trust-bar">
+  <div class="container trust-inner">
+    <p class="trust-left"><span class="trust-signal" aria-hidden="true"></span>Independent, dated, no affiliate links</p>
+    <p class="trust-right">Offers checked <time datetime="2026-10-22">October 22, 2026</time></p>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="The Free Tier Field Guide, home">
+      <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+      <span class="brand-copy">
+        <span class="brand-kicker">Asdale Dynamics</span>
+        <span class="brand-title">The Free Tier Field Guide</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="guide.html" class="is-active" aria-current="page">The guide</a><a href="finder.html">Program finder</a><a href="tracker.html">Tracker</a><a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+  <main id="main">
+<article class="chapter">
+  <header class="chapter-hero">
+    <div class="container chapter-hero-inner">
+      <div class="chapter-hero-top">
+        <a class="back-link" href="guide.html"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg> All chapters</a>
+        <span class="chapter-position">Chapter 02 of 09</span>
+      </div>
+      <p class="chapter-kicker">Chapter 02 · API allowances</p>
+      <h1>Free AI API credits</h1>
+      <p class="chapter-lede">Where real free API allowances exist in 2026, what they cost in data and limits, and how to build a portable first prototype.</p>
+      <div class="chapter-meta">
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-clock"></use></svg> 10 min read</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg> Updated Oct 24, 2026</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg> Checked October 22, 2026</span>
+      </div>
+    </div>
+  </header>
+  <div class="container chapter-layout">
+    <aside class="chapter-aside">
+      <div class="aside-sticky">
+        <p class="toc-label">On this page</p>
+        <nav class="toc" aria-label="On this page">
+          <a class="toc-link toc-link--h2" href="#the-honest-map-as-of-october-22-2026">The honest map, as of October 22, 2026</a>
+<a class="toc-link toc-link--h2" href="#things-that-are-not-free-api-credits">Things that are not free API credits</a>
+<a class="toc-link toc-link--h2" href="#free-coding-assistants-are-a-different-product">Free coding assistants are a different product</a>
+<a class="toc-link toc-link--h2" href="#the-four-numbers-that-determine-your-bill">The four numbers that determine your bill</a>
+<a class="toc-link toc-link--h2" href="#a-provider-portable-first-call">A provider-portable first call</a>
+<a class="toc-link toc-link--h2" href="#free-tiers-are-not-private-by-default">Free tiers are not private by default</a>
+<a class="toc-link toc-link--h2" href="#how-to-be-a-good-citizen-of-free-tiers">How to be a good citizen of free tiers</a>
+<a class="toc-link toc-link--h2" href="#a-practical-starter-stack">A practical starter stack</a>
+<a class="toc-link toc-link--h2" href="#try-this-now">Try this now</a>
+        </nav>
+        <div class="aside-promo">
+          <span class="aside-promo-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+          <p class="rail-label">Before you enter a card</p>
+          <p>Run the 15-minute audit: list the tools, set one hard cap, save one cancel URL.</p>
+          <a class="text-link text-link--small" href="08-avoid-surprise-bills.html">Open the playbook <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+      </div>
+    </aside>
+    <div class="chapter-content-wrap">
+      <details class="toc-disclosure">
+  <summary>On this page <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chevron-down"></use></svg></summary>
+  <nav class="toc-mobile-links" aria-label="On this page">
+    <a class="toc-link toc-link--h2" href="#the-honest-map-as-of-october-22-2026">The honest map, as of October 22, 2026</a>
+<a class="toc-link toc-link--h2" href="#things-that-are-not-free-api-credits">Things that are not free API credits</a>
+<a class="toc-link toc-link--h2" href="#free-coding-assistants-are-a-different-product">Free coding assistants are a different product</a>
+<a class="toc-link toc-link--h2" href="#the-four-numbers-that-determine-your-bill">The four numbers that determine your bill</a>
+<a class="toc-link toc-link--h2" href="#a-provider-portable-first-call">A provider-portable first call</a>
+<a class="toc-link toc-link--h2" href="#free-tiers-are-not-private-by-default">Free tiers are not private by default</a>
+<a class="toc-link toc-link--h2" href="#how-to-be-a-good-citizen-of-free-tiers">How to be a good citizen of free tiers</a>
+<a class="toc-link toc-link--h2" href="#a-practical-starter-stack">A practical starter stack</a>
+<a class="toc-link toc-link--h2" href="#try-this-now">Try this now</a>
+  </nav>
+</details>
+      <div class="prose">
+        <p>An API key is not a subscription. It is a credential that lets a program spend money—or use a limited allowance—on your behalf. Before you put one in a script, know which of those you are dealing with.</p>
+<p>This chapter covers the API offers that were real at check time, the ones that are commonly misdescribed as free, and a way to prototype that does not tie your project to one vendor.</p>
+<blockquote><p><strong>In plain English:</strong> You can absolutely build useful things on free API tiers. You just need to treat the free tier as a small, temporary lab bench, not as the foundation of the house.</p></blockquote>
+<h2 id="the-honest-map-as-of-october-22-2026">The honest map, as of October 22, 2026</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Provider</th><th scope="col">What is free at check</th><th scope="col">Card</th><th scope="col">Main catch</th></tr></thead><tbody><tr><td><strong>Google Gemini Developer API / AI Studio</strong></td><td>A rate-limited free tier for selected models, with an API key available from AI Studio. Free-tier limits are shown in AI Studio rather than a single static public table.</td><td>No card needed for the free tier.</td><td>Free-tier content may be used to improve Google products. Some models are paid-only. Do not send private or client data. <a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener noreferrer">Pricing</a> · <a href="https://ai.google.dev/gemini-api/docs/rate-limits" target="_blank" rel="noopener noreferrer">Rate limits</a></td></tr><tr><td><strong>Groq</strong></td><td>A free tier for fast hosted open models, with limits that vary by model and apply per organization.</td><td>No card at check.</td><td>It is rate-limited, not unlimited. Check the current model list and data terms. <a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Rate limits</a></td></tr><tr><td><strong>OpenRouter</strong></td><td>Free model variants from multiple providers, useful for comparing models through one API.</td><td>No card for free models.</td><td>Daily request caps depend on your credit history: below $10 in lifetime purchases, 50 free-model requests per day; at $10 or more, 1,000 per day at check. Free variants rotate and may have provider data policies. <a href="https://openrouter.ai/docs/api-reference/limits" target="_blank" rel="noopener noreferrer">Limits</a></td></tr><tr><td><strong>Cloudflare Workers AI</strong></td><td>A free allocation of 10,000 Neurons per day on the Workers Free plan, plus an OpenAI-compatible API.</td><td>No card for the free plan.</td><td>Good for small, edge-hosted features, not bulk generation. Model availability and per-model neuron costs vary. <a href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener noreferrer">Pricing</a></td></tr><tr><td><strong>Mistral La Plateforme</strong></td><td>A Free mode with monthly usage and rate limits, no card at check.</td><td>No card at check.</td><td>Free-mode data may be used for training unless you opt out. Limits are shown in the admin console. <a href="https://docs.mistral.ai/admin/billing-usage/usage-limits" target="_blank" rel="noopener noreferrer">Usage limits</a></td></tr><tr><td><strong>Cohere</strong></td><td>A trial API key for evaluation, rate-limited and limited to a monthly call quota.</td><td>No card for trial key.</td><td>Trial keys are for evaluation, not production. The exact quota and model access can change; confirm in the dashboard before relying on it. <a href="https://docs.cohere.com/docs/rate-limits" target="_blank" rel="noopener noreferrer">Docs</a></td></tr><tr><td><strong>NVIDIA NIM</strong></td><td>Free access to hosted NIM endpoints through the NVIDIA Developer Program, including OpenAI-compatible APIs and a starting credit allotment.</td><td>No card at check.</td><td>Intended for development and evaluation; you may need to request more credits, and hosted model access changes. <a href="https://build.nvidia.com/" target="_blank" rel="noopener noreferrer">NVIDIA Build</a></td></tr></tbody></table></div>
+<p>Every row deserves a second sentence: <strong>the free version is a different product from the paid version.</strong> It can have different data handling, different models, different reliability, and different support. That is not a trick. It is the trade.</p>
+<h2 id="things-that-are-not-free-api-credits">Things that are not free API credits</h2>
+<p>Some offers get repeated so often that they feel true. Check them before you plan around them.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Offer</th><th scope="col">The reality at check</th></tr></thead><tbody><tr><td><strong>OpenAI API</strong></td><td>There are no routine, automatic free API credits for new accounts. API usage is prepaid. The free ChatGPT app is a separate product from the API. Startups may get credits through investor partners or programs, but that is not a general sign-up bonus.</td></tr><tr><td><strong>Anthropic Claude API</strong></td><td>We found no general free API credit offer at check. The free Claude consumer app is not an API credit. Startup credits are limited and partner-dependent.</td></tr><tr><td><strong>GitHub Models</strong></td><td>Fully retired on July 30, 2026, including its playground, model catalog, and inference API. A good reminder that developer freebies are not permanent infrastructure. <a href="https://docs.github.com/en/github-models" target="_blank" rel="noopener noreferrer">Retirement notice</a></td></tr><tr><td><strong>Hugging Face Inference Providers</strong></td><td>Free Hugging Face accounts do not include monthly inference credits. PRO is $9 per month and included $2 per month in compute credits at check; you can also buy credits. Free Spaces on CPU are a separate, limited hosting product. <a href="https://huggingface.co/docs/inference-providers/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></td></tr><tr><td><strong>Together AI</strong></td><td>No free trial credits at check; the platform is prepaid and requires a minimum credit purchase. A startup accelerator may offer separate credits.</td></tr><tr><td><strong>Free ChatGPT or Claude subscription</strong></td><td>Useful for learning, but it does not give your code an API key or predictable programmatic access. Do not build a product on browser automation of a chat app.</td></tr></tbody></table></div>
+<p>If an offer is missing from this chapter, it may still exist. It may also be regional, invite-only, or too unstable to recommend. The absence is a prompt to check the official page, not a verdict that the provider is bad.</p>
+<h2 id="free-coding-assistants-are-a-different-product">Free coding assistants are a different product</h2>
+<p>A coding assistant can be free without giving you a general-purpose API allowance. It is usually a seat with its own completion, chat, or agent limits—and those limits can change with the plan.</p>
+<p>At check, the useful options fell into three groups:</p>
+<ul>
+<li><strong>GitHub Copilot Free.</strong> A limited free plan that does not require student verification. Copilot moved to usage-based billing in 2026, so read the current completion and premium-request limits rather than relying on older descriptions. <a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Copilot plans</a></li>
+<li><strong>Gemini Code Assist for individuals.</strong> A free individual tier with usage limits, separate from the Gemini API&#39;s free tier and from a Google AI consumer subscription. <a href="https://developers.google.com/gemini-code-assist/docs/overview" target="_blank" rel="noopener noreferrer">Docs</a></li>
+<li><strong>A free editor plan or an open-source client.</strong> Cursor and similar editors advertise limited free plans. Open-source clients such as Continue, Cline, and Aider do not charge a seat fee, but you still need a model—local or hosted—and that model&#39;s allowance and data terms apply. <a href="https://cursor.com/pricing" target="_blank" rel="noopener noreferrer">Cursor pricing</a> · <a href="07-open-source-alternatives.html">Local tools</a></li>
+</ul>
+
+<p>The safety rules are the same as for any AI tool, with one extra: <strong>your code context is data.</strong> It can include API keys, customer names, internal URLs, and unfinished business logic.</p>
+<ul>
+<li>Read the provider&#39;s data-use setting before opening a private repository. A free coding plan may collect code for product improvement unless you change the setting or use a different plan.</li>
+<li>Keep secrets out of the editor context. Use environment variables, a local <code>.env</code> file that Git ignores, and a secret scanner before you commit.</li>
+<li>Review every diff before accepting it. An agent that can edit files can also delete the wrong file or introduce a dependency you did not choose.</li>
+<li>Use a disposable branch or a scratch repository for the first agent experiment. Do not give an unsupervised agent production credentials.</li>
+<li>Know what happens at the cap: does the assistant stop, downgrade to a smaller model, or ask you to pay? &quot;Free&quot; that silently becomes a paid upgrade is still a surprise bill.</li>
+</ul>
+
+<p>For student-specific coding benefits, see <a href="05-student-education-discounts.html">Chapter 5</a>. For a local coding setup with no per-token bill, see <a href="07-open-source-alternatives.html">Chapter 7</a>.</p>
+<h2 id="the-four-numbers-that-determine-your-bill">The four numbers that determine your bill</h2>
+<p>API pricing looks complicated, but most of the surprise comes from four things:</p>
+<ol>
+<li><strong>Input tokens.</strong> Everything you send: instructions, examples, retrieved documents, conversation history.</li>
+<li><strong>Output tokens.</strong> Everything the model generates. Output is often priced higher than input.</li>
+<li><strong>Retries and loops.</strong> A failed request that is retried can cost money. An agent that keeps calling tools can spend far more than a single chat.</li>
+<li><strong>The model you chose.</strong> A frontier model can cost many times more than a small model for a task where the small model is good enough.</li>
+</ol>
+
+<p>Free tiers change these constraints, but they do not change the underlying behavior. A free tier with a token-per-minute limit will fail in the middle of a long document. A free model with a daily request cap will fail during a demo. Plan for graceful failure: shorter prompts, chunking, caching, and a clear &quot;try later&quot; message.</p>
+<blockquote><p><strong>Reality check:</strong> &quot;I used the cheap model&quot; is not the same as &quot;I used the free model.&quot; Check the model ID in your code and in the provider dashboard. It is easy to leave a strong default in place and wonder why the allowance vanished.</p></blockquote>
+<h2 id="a-provider-portable-first-call">A provider-portable first call</h2>
+<p>Most of the providers above offer an OpenAI-compatible endpoint (NVIDIA NIM, Groq, OpenRouter, Cloudflare, Mistral, and local Ollama can all fit this pattern, though the exact URL and model IDs differ). That lets you start with one SDK and move later.</p>
+<p>This example uses environment variables. It does <strong>not</strong> contain a real key, and it will not run until you set one locally. Never commit a key to a repository, paste it into a chat, or put it in a browser-side script.</p>
+<pre><code class="language-python">import os
+from openai import OpenAI
+
+client = OpenAI(
+    base_url=os.environ[&quot;LLM_BASE_URL&quot;],
+    api_key=os.environ[&quot;LLM_API_KEY&quot;],
+)
+
+response = client.chat.completions.create(
+    model=os.environ[&quot;LLM_MODEL&quot;],
+    messages=[
+        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a concise writing assistant.&quot;},
+        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Give me three plain-English titles for a beginner AI guide.&quot;},
+    ],
+    max_tokens=200,
+    timeout=30,
+)
+
+print(response.choices[0].message.content)</code></pre>
+<p>Set the three values in your shell or a local <code>.env</code> file that is ignored by Git. For a local Ollama server, the base URL is usually <code>http://localhost:11434/v1</code>; the model is one you have pulled locally; the API key value is a placeholder that Ollama does not validate. For a hosted provider, copy the base URL and model ID from that provider&#39;s current documentation—not from an old blog post.</p>
+<p>The point is not that every provider is identical. The point is that your application should not hard-code one vendor&#39;s SDK calls in fifty places. Two functions—one to ask a model, one to estimate usage—are enough to start.</p>
+<h2 id="free-tiers-are-not-private-by-default">Free tiers are not private by default</h2>
+<p>This is the part that matters most for a healthcare-adjacent audience.</p>
+<ul>
+<li>Google&#39;s Gemini API free tier says content may be used to improve Google products.</li>
+<li>Mistral&#39;s free-mode documentation says data may be used for training unless you opt out.</li>
+<li>Some OpenRouter free variants have provider data policies that differ from paid variants.</li>
+<li>A free consumer chat may train on your conversations; a paid API may offer zero retention or enterprise controls. Those are not the same product.</li>
+</ul>
+
+<p>If you are writing about health, education, or client work, use synthetic examples: &quot;a 68-year-old patient with [invented details]&quot; rather than a real chart. Do not send protected health information, student records, unpublished client data, or your own confidential business documents to a free tier. A paid plan alone is not automatically HIPAA-compliant; you need the right agreement and workflow for the data. That is a compliance question, not a coupon question.</p>
+<p>The safest pattern for early experiments is to create a <strong>clean data set</strong>: public-domain text, invented personas, and sample documents you wrote yourself. Keep the real material out until you have a contract and a provider that supports your use case.</p>
+<h2 id="how-to-be-a-good-citizen-of-free-tiers">How to be a good citizen of free tiers</h2>
+<p>Free allowances are shared infrastructure. A few habits keep you from getting blocked and make your results more reproducible:</p>
+<ul>
+<li><strong>Do not create multiple accounts to evade limits.</strong> Rate limits apply per organization or per person for a reason. It also makes your billing and data harder to manage.</li>
+<li><strong>Do not resell free credits or paywall your free-tier access.</strong> That is usually against the terms and can get an account terminated.</li>
+<li><strong>Cache and batch.</strong> If you ask the same prompt repeatedly, store the result. If you need to process a hundred documents, use a batch endpoint if the provider offers one.</li>
+<li><strong>Avoid retry storms.</strong> Use exponential backoff, a maximum number of attempts, and an alert when failures spike.</li>
+<li><strong>Keep prompts short and specific.</strong> A long context is not automatically a better answer. It is always more tokens.</li>
+<li><strong>Use a small model for small tasks.</strong> Classification, cleanup, and title generation rarely need the largest model.</li>
+<li><strong>Read the free-tier terms again after a provider changes its pricing.</strong> A model that was free last month can move behind a paid tier.</li>
+</ul>
+
+<h2 id="a-practical-starter-stack">A practical starter stack</h2>
+<p>If you are building a small tool for an audience rather than a high-volume product, this stack is a reasonable starting point:</p>
+<ul>
+<li><strong>Prototype:</strong> Gemini free tier or Groq for text; Cloudflare Workers AI for a small edge feature; OpenRouter when you want to compare models.</li>
+<li><strong>Learning with private notes:</strong> a local model through Ollama or LM Studio (see <a href="07-open-source-alternatives.html">Chapter 7</a>).</li>
+<li><strong>Production:</strong> one paid provider with a hard spend limit and a documented fallback, not four overlapping free trials.</li>
+<li><strong>Data:</strong> synthetic examples in development; no patient, student, or client records in free tiers.</li>
+</ul>
+
+<p>Avoid stacking free tiers just to look &quot;multi-provider.&quot; A second provider is useful when it gives you a real fallback, a different modality, or better privacy terms. Otherwise it is one more key to rotate and one more dashboard to check.</p>
+<h2 id="try-this-now">Try this now</h2>
+<ol>
+<li>Pick one provider from the table and create an account with a dedicated business email.</li>
+<li>Find the exact free-tier limits in the provider&#39;s dashboard and write them in your tracker, including the date.</li>
+<li>Make one small request with the provider&#39;s own quickstart. Use public or invented text only.</li>
+<li>Write down what would happen if the free allowance ended today: stop, pay, or switch? If the answer is unclear, do not build a customer workflow on it yet.</li>
+<li>Bookmark the data-use and billing pages. You will need them more than the marketing page.</li>
+</ol>
+
+<p>For the compute side of the equation—free VMs, notebooks, and static hosting—continue to <a href="03-cloud-free-tiers.html">Chapter 3</a>.</p>
+      </div>
+      <aside class="chapter-safety-note">
+        <span class="chapter-safety-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+        <div>
+          <h2>The habit behind the list</h2>
+          <p>Offers change. A dated check, a tested limit, and a cancel path do not. Use the tracker before you use the trial.</p>
+        </div>
+        <a class="button button-secondary" href="tracker.html">Open the tracker</a>
+      </aside>
+      <nav class="chapter-pager" aria-label="Chapter navigation">
+        <a class="pager-card pager-card--previous" href="01-how-free-offers-work.html">
+  <span class="pager-direction">Previous</span>
+  <span class="pager-label">Chapter 01</span>
+  <span class="pager-title">How free offers really work</span>
+  <span class="pager-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg></span>
+</a>
+        <a class="pager-card pager-card--next" href="03-cloud-free-tiers.html">
+  <span class="pager-direction">Next</span>
+  <span class="pager-label">Chapter 03</span>
+  <span class="pager-title">Cloud free tiers</span>
+  <span class="pager-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+</a>
+      </nav>
+    </div>
+  </div>
+</article>
+  </main>
+  <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html" aria-label="The Free Tier Field Guide, home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+        <span class="brand-copy">
+          <span class="brand-kicker">Asdale Dynamics</span>
+          <span class="brand-title">The Free Tier Field Guide</span>
+        </span>
+      </a>
+      <p>Free AI, cloud, and developer offers, with the catch included.</p>
+      <p class="footer-small">Plain English. Dated facts. A cancel date before the card.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <a href="guide.html">The guide</a>
+      <a href="finder.html">Program finder</a>
+      <a href="tracker.html">Tracker &amp; reminders</a>
+      <a href="sources.html">Sources &amp; changes</a>
+    </div>
+    <div class="footer-links">
+      <h2>Read before signing up</h2>
+      <a href="08-avoid-surprise-bills.html">Avoid surprise bills</a>
+      <a href="07-open-source-alternatives.html">Run AI locally</a>
+      <a href="free-credit-tracker-template.csv" download>Download the tracker</a>
+    </div>
+    <div class="footer-note">
+      <h2>The short rule</h2>
+      <p>No card without a hard cap, a real job, and a dated exit.</p>
+      <time class="footer-stamp" datetime="2026-10-22">Checked October 22, 2026</time>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>Copyright (c) 2026 Asdale Dynamics, LLC. All rights reserved.</p>
+    <p>Educational material only—not financial, legal, tax, medical, or compliance advice. Offers and terms change—verify with the provider.</p>
+  </div>
+</footer>
+</body>
+</html>

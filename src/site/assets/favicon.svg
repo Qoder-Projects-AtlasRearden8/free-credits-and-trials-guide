@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">The Free Tier Field Guide</title>
+  <rect width="64" height="64" rx="16" fill="#173b32"/>
+  <path d="M17 46 30 16h5l13 30h-7.5l-2.3-6H26.6l-2.3 6H17Zm12-12.2h6.9L32.6 23 29 33.8Z" fill="#f8f2e4"/>
+  <circle cx="49" cy="48" r="5" fill="#eef0a5"/>
+</svg>

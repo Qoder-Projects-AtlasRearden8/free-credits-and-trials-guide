@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud free tiers | The Free Tier Field Guide</title>
+  <meta name="description" content="How AWS, Google Cloud, Azure, Oracle, hosting, and developer infrastructure structure free usage, plus the idle resources that create surprise bills.">
+  <meta name="author" content="Asdale Dynamics, LLC">
+  <meta name="theme-color" content="#173b32">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Free Tier Field Guide">
+  <meta property="og:title" content="Cloud free tiers | The Free Tier Field Guide">
+  <meta property="og:description" content="How AWS, Google Cloud, Azure, Oracle, hosting, and developer infrastructure structure free usage, plus the idle resources that create surprise bills.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body class="page-chapter-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<symbol id="icon-arrow-right" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h13M11 5l5 5-5 5"/></symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10H4m5-5-5 5 5 5"/></symbol>
+<symbol id="icon-external" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3.5h5.5V9M16.5 3.5 8.5 11.5M15 12.5V17H3V5h4.5"/></symbol>
+<symbol id="icon-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 4.3 4.2L17 4.5"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l3 1.8"/></symbol>
+<symbol id="icon-download" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.8v10m0 0 4-4m-4 4-4-4M3 16.8h14"/></symbol>
+<symbol id="icon-search" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.3"/><path d="m12.5 12.5 4 4"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.4 17 5v4.6c0 4-2.9 6.8-7 8-4.1-1.2-7-4-7-8V5l7-2.6Z"/><path d="m6.8 9.8 2.1 2.1 4.4-4.4"/></symbol>
+<symbol id="icon-spark" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2.5c.4 4.8 2.7 7.1 7.5 7.5-4.8.4-7.1 2.7-7.5 7.5-.4-4.8-2.7-7.1-7.5-7.5 4.8-.4 7.1-2.7 7.5-7.5Z"/></symbol>
+<symbol id="icon-cloud" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 15.8h7.6a3.8 3.8 0 0 0 .5-7.6 5.1 5.1 0 0 0-9.8 1.1 3.3 3.3 0 0 0 1.7 6.5Z"/></symbol>
+<symbol id="icon-terminal" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="2"/><path d="m6 7 3 3-3 3m6.5 0H14"/></symbol>
+<symbol id="icon-book" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5h5.2c1 0 1.8.8 1.8 1.8v11.2c0-1.1-.8-2-1.8-2H3V3.5Zm14 0h-5.2c-1 0-1.8.8-1.8 1.8v11.2c0-1.1.8-2 1.8-2H17V3.5Z"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M6.5 2.8v3.4M13.5 2.8v3.4M3 8.2h14m-10.3 3.3h2v2h-2z"/></symbol>
+<symbol id="icon-file" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2.8h6l4 4v10.4H5V2.8Z"/><path d="M11 2.8v4h4M7.8 11h4.4m-4.4 3h4.4"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 18 17H2L10 3Z"/><path d="M10 8v4m0 2.6v.1"/></symbol>
+<symbol id="icon-chevron-down" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7.5 5 5 5-5"/></symbol>
+</svg>
+  <div class="trust-bar">
+  <div class="container trust-inner">
+    <p class="trust-left"><span class="trust-signal" aria-hidden="true"></span>Independent, dated, no affiliate links</p>
+    <p class="trust-right">Offers checked <time datetime="2026-10-22">October 22, 2026</time></p>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="The Free Tier Field Guide, home">
+      <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+      <span class="brand-copy">
+        <span class="brand-kicker">Asdale Dynamics</span>
+        <span class="brand-title">The Free Tier Field Guide</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="guide.html" class="is-active" aria-current="page">The guide</a><a href="finder.html">Program finder</a><a href="tracker.html">Tracker</a><a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+  <main id="main">
+<article class="chapter">
+  <header class="chapter-hero">
+    <div class="container chapter-hero-inner">
+      <div class="chapter-hero-top">
+        <a class="back-link" href="guide.html"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg> All chapters</a>
+        <span class="chapter-position">Chapter 03 of 09</span>
+      </div>
+      <p class="chapter-kicker">Chapter 03 · Cloud</p>
+      <h1>Cloud free tiers</h1>
+      <p class="chapter-lede">How AWS, Google Cloud, Azure, Oracle, hosting, and developer infrastructure structure free usage, plus the idle resources that create surprise bills.</p>
+      <div class="chapter-meta">
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-clock"></use></svg> 10 min read</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg> Updated Oct 24, 2026</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg> Checked October 22, 2026</span>
+      </div>
+    </div>
+  </header>
+  <div class="container chapter-layout">
+    <aside class="chapter-aside">
+      <div class="aside-sticky">
+        <p class="toc-label">On this page</p>
+        <nav class="toc" aria-label="On this page">
+          <a class="toc-link toc-link--h2" href="#the-big-four-at-check">The big four, at check</a>
+<a class="toc-link toc-link--h2" href="#hosting-and-compute-offers">Hosting and compute offers</a>
+<a class="toc-link toc-link--h2" href="#the-rest-of-the-developer-stack">The rest of the developer stack</a>
+<a class="toc-link toc-link--h2" href="#the-small-resource-tax">The small-resource tax</a>
+<a class="toc-link toc-link--h2" href="#a-safe-first-cloud-experiment">A safe first cloud experiment</a>
+<a class="toc-link toc-link--h2" href="#which-one-should-you-use">Which one should you use?</a>
+<a class="toc-link toc-link--h2" href="#free-is-not-the-same-as-reliable">Free is not the same as reliable</a>
+<a class="toc-link toc-link--h2" href="#try-this-now">Try this now</a>
+        </nav>
+        <div class="aside-promo">
+          <span class="aside-promo-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+          <p class="rail-label">Before you enter a card</p>
+          <p>Run the 15-minute audit: list the tools, set one hard cap, save one cancel URL.</p>
+          <a class="text-link text-link--small" href="08-avoid-surprise-bills.html">Open the playbook <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+      </div>
+    </aside>
+    <div class="chapter-content-wrap">
+      <details class="toc-disclosure">
+  <summary>On this page <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chevron-down"></use></svg></summary>
+  <nav class="toc-mobile-links" aria-label="On this page">
+    <a class="toc-link toc-link--h2" href="#the-big-four-at-check">The big four, at check</a>
+<a class="toc-link toc-link--h2" href="#hosting-and-compute-offers">Hosting and compute offers</a>
+<a class="toc-link toc-link--h2" href="#the-rest-of-the-developer-stack">The rest of the developer stack</a>
+<a class="toc-link toc-link--h2" href="#the-small-resource-tax">The small-resource tax</a>
+<a class="toc-link toc-link--h2" href="#a-safe-first-cloud-experiment">A safe first cloud experiment</a>
+<a class="toc-link toc-link--h2" href="#which-one-should-you-use">Which one should you use?</a>
+<a class="toc-link toc-link--h2" href="#free-is-not-the-same-as-reliable">Free is not the same as reliable</a>
+<a class="toc-link toc-link--h2" href="#try-this-now">Try this now</a>
+  </nav>
+</details>
+      <div class="prose">
+        <p>Cloud free tiers are a different animal from AI API free tiers. An API call happens, returns, and stops. A cloud resource can keep running—and keep costing money—while you eat dinner, sleep, or take a month off.</p>
+<p>This chapter explains the current shape of the major offers, the traps that catch small businesses, and a safe way to try a cloud platform without making your card part of the experiment.</p>
+<blockquote><p><strong>In plain English:</strong> A free cloud server is like a free hotel room. It is only free while the terms say so, and checkout is your job.</p></blockquote>
+<h2 id="the-big-four-at-check">The big four, at check</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Provider</th><th scope="col">Current free structure at check</th><th scope="col">Payment method</th><th scope="col">What to watch</th></tr></thead><tbody><tr><td><strong>AWS Free Tier</strong></td><td>New accounts receive <strong>$100 in credits</strong> and can earn <strong>up to another $100</strong> by completing activities. The <strong>Free account plan</strong> lasts up to <strong>six months</strong> or until credits run out. It includes always-free service allowances and excludes some services. The Free account plan does not charge you until you upgrade; at the end, the account closes if unused.</td><td>A payment method is part of signup; confirm the current requirements.</td><td>Old guides describe a twelve-month everything-free tier. That is no longer the right mental model for a new account. On the <strong>Paid account plan</strong>, usage beyond credits or not covered by credits is billed at standard rates. <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html" target="_blank" rel="noopener noreferrer">AWS docs</a></td></tr><tr><td><strong>Google Cloud Free</strong></td><td><strong>$300 welcome credit for 90 days</strong>, plus an Always Free tier. At check, Always Free included one e2-micro VM in specific US regions, 5 GB of Cloud Storage, and limited BigQuery usage, among other services.</td><td>Billing account and card are required.</td><td>The trial is time-boxed. Always Free is region- and service-specific. Google Cloud budgets are <strong>alerts-only</strong> unless you configure additional actions or quotas. <a href="https://docs.cloud.google.com/free/docs/free-cloud-features" target="_blank" rel="noopener noreferrer">Free features</a></td></tr><tr><td><strong>Microsoft Azure Free</strong></td><td><strong>$200 credit for 30 days</strong>, plus free quantities of selected services for 12 months. The account is disabled if you do not move to pay-as-you-go after the credit expires or the 30 days end.</td><td>Credit card required for verification.</td><td>Azure free is a trial, not a permanent free tier for your application. Budgets notify; they do not stop resources. Data can lag 8–24 hours, so an alert can arrive after spending. <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account" target="_blank" rel="noopener noreferrer">Azure free account</a></td></tr><tr><td><strong>Oracle Cloud Free Tier</strong></td><td>A $300 trial plus Always Free resources, including two AMD micro VMs, an Ampere A1 allowance that current docs describe as the first <strong>1,500 OCPU-hours and 9,000 GB-hours per month</strong> (equivalent to 2 OCPUs and 12 GB running continuously), and two small Autonomous Databases.</td><td>Card is generally required for verification; confirm at signup.</td><td>Capacity is region-dependent and popular shapes can be unavailable. Always Free instances may be reclaimed if CPU, network, and memory stay idle. At trial end, Object Storage above 20 GB can be deleted. The A1 allowance is lower than older blog posts claim. <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm" target="_blank" rel="noopener noreferrer">Oracle Always Free docs</a></td></tr></tbody></table></div>
+<p>Two useful phrases:</p>
+<ul>
+<li><strong>Free trial credits</strong> are money that expires. When they are gone, you either upgrade or lose access.</li>
+<li><strong>Always-free allowances</strong> are monthly usage limits that continue as long as the account and offer exist. They can still change, and they often exclude the capacity you actually need.</li>
+</ul>
+
+<p>A third phrase matters too: <strong>free for personal use only</strong>. Several hosting platforms market a generous free plan that is not licensed for commercial use. Read that line before you deploy a client project or a revenue-generating storefront.</p>
+<h2 id="hosting-and-compute-offers">Hosting and compute offers</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Platform</th><th scope="col">Free offer at check</th><th scope="col">Best use</th><th scope="col">Main catch</th></tr></thead><tbody><tr><td><strong>Vercel Hobby</strong></td><td>Free personal plan with monthly CDN, data, and function allowances; overages are hard-capped at check rather than billed.</td><td>Personal demos and hobby sites.</td><td>The Hobby plan is <strong>not for commercial use</strong>. A business site for an LLC should use a plan that allows commercial use. <a href="https://vercel.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></td></tr><tr><td><strong>Netlify Free</strong></td><td>A free plan with a monthly credit allowance, deploys, custom domains, and functions.</td><td>Static sites and small demos.</td><td>The credit system and limits change; check the current plan and overage behavior in the dashboard. <a href="https://www.netlify.com/pricing/" target="_blank" rel="noopener noreferrer">Pricing</a></td></tr><tr><td><strong>Render Free</strong></td><td>Free web services with limited RAM/CPU and bandwidth; services sleep after inactivity. No card required for the free plan at check.</td><td>Demos, learning, low-traffic experiments.</td><td>Slow cold starts and sleeping services are not a production experience. Limits can change. <a href="https://render.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></td></tr><tr><td><strong>GitHub Pages</strong></td><td>Free static hosting from a public repository, with custom domains and HTTPS.</td><td>Manuals, documentation, portfolios, static tools.</td><td>Static files only; no server-side code or private repositories on the free plan. Usage limits and acceptable-use rules apply. <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">Docs</a></td></tr><tr><td><strong>Hugging Face Spaces</strong></td><td>Free CPU-hosted Spaces with usage limits; GPU upgrades are paid.</td><td>Small open-model demos and community projects.</td><td>Free compute is limited and can sleep. Hugging Face free accounts do not include Inference Providers credits at check. Check visibility and data policies. <a href="https://huggingface.co/docs/hub/spaces-overview" target="_blank" rel="noopener noreferrer">Spaces docs</a></td></tr><tr><td><strong>Google Colab</strong></td><td>Free hosted notebooks; GPU and TPU access is not guaranteed and sessions time out.</td><td>Learning, notebooks, one-off experiments.</td><td>Not production hosting. Do not process sensitive data, and do not expect a free GPU to be available at a specific time. <a href="https://colab.research.google.com/" target="_blank" rel="noopener noreferrer">Colab</a></td></tr><tr><td><strong>Kaggle</strong></td><td>Free notebooks and datasets, with limited weekly GPU/TPU quotas.</td><td>Public experiments and learning.</td><td>Quotas, session limits, and verification requirements vary. Notebooks and data are public by default in many contexts; check before uploading anything private. <a href="https://www.kaggle.com/docs/notebooks" target="_blank" rel="noopener noreferrer">Kaggle docs</a></td></tr></tbody></table></div>
+<blockquote><p><strong>For an LLC:</strong> GitHub Pages and a commercial hosting plan are usually a cleaner combination than a no-cost hobby plan that forbids commercial use. &quot;Free&quot; that violates the terms is not free.</p></blockquote>
+<h2 id="the-rest-of-the-developer-stack">The rest of the developer stack</h2>
+<p>Hosting is only one layer. CI, databases, object storage, authentication, email, and monitoring also have free plans—and their meters are easy to miss because they count minutes, rows, events, seats, or monthly active users instead of dollars.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Layer</th><th scope="col">Examples at check</th><th scope="col">What to verify before you depend on it</th></tr></thead><tbody><tr><td><strong>CI and build minutes</strong></td><td><a href="https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a></td><td>Included minutes and storage for private repositories; public repositories may be free; runner-size multipliers; whether a billing method is required once the allowance is gone.</td></tr><tr><td><strong>Edge and serverless</strong></td><td><a href="https://developers.cloudflare.com/workers/platform/limits/" target="_blank" rel="noopener noreferrer">Cloudflare Workers</a></td><td>Daily requests and CPU time, per-account versus per-project limits, paid overage behavior, and whether the free plan permits commercial use.</td></tr><tr><td><strong>Database</strong></td><td><a href="https://supabase.com/pricing" target="_blank" rel="noopener noreferrer">Supabase</a>, <a href="https://neon.com/pricing" target="_blank" rel="noopener noreferrer">Neon</a>, <a href="https://www.mongodb.com/atlas" target="_blank" rel="noopener noreferrer">MongoDB Atlas</a></td><td>Storage and compute allowances, inactivity pause or scale-to-zero rules, connection limits, backup and restore terms, and what happens to your data if the project is suspended.</td></tr><tr><td><strong>Object storage</strong></td><td><a href="https://developers.cloudflare.com/r2/pricing/" target="_blank" rel="noopener noreferrer">Cloudflare R2</a></td><td>Storage, operations, and egress allowances; minimum retention; whether deleting the database also deletes the backups.</td></tr><tr><td><strong>Monitoring</strong></td><td><a href="https://sentry.io/pricing/" target="_blank" rel="noopener noreferrer">Sentry</a></td><td>Monthly event quota, retention, seat limits, sampling controls, and whether a free plan has a card requirement.</td></tr></tbody></table></div>
+<p>These offers are useful for shipping a small tool, but they are not a production architecture. A free database is not a backup. Free CI is not an uptime guarantee. A free monitoring quota can hide the incident that exhausts it.</p>
+<p>Use the same five-question test you would use for a cloud trial:</p>
+<ol>
+<li><strong>What is the unit, and when does it reset?</strong> Minutes, requests, rows, events, seats, or monthly active users can reset on different schedules.</li>
+<li><strong>What happens at the cap?</strong> Does the service stop, throttle, pause the project, or bill the card?</li>
+<li><strong>What happens when you are inactive?</strong> Free databases and apps often pause, and a paused project can lose scheduled jobs or inbound email.</li>
+<li><strong>Can you get your data out?</strong> Test an export before you store anything you care about.</li>
+<li><strong>Is this the right license for the work?</strong> Some free plans are personal-use only, and some limit commercial or team use.</li>
+</ol>
+
+<blockquote><p><strong>Reality check:</strong> &quot;Developer free tier&quot; often means &quot;free for one person, one project, and one small workload.&quot; That is a fine place to learn. It is not a promise that the same architecture will stay cheap for a team or a customer-facing product.</p></blockquote>
+<h2 id="the-small-resource-tax">The small-resource tax</h2>
+<p>Cloud bills are rarely one giant charge. They are a flock of small, boring charges that stayed alive:</p>
+<ul>
+<li>A virtual machine you stopped using but never terminated.</li>
+<li>A GPU notebook left running overnight.</li>
+<li>A managed database that keeps storage and backups even when idle.</li>
+<li>A static IP address attached to nothing.</li>
+<li>A NAT gateway, load balancer, or logging pipeline.</li>
+<li>Egress: data leaving the cloud, especially across regions or to the internet.</li>
+<li>Snapshots and old disk volumes from deleted machines.</li>
+<li>Storage buckets accumulating test files.</li>
+<li>Serverless invocations from a loop with no cap.</li>
+<li>A trial that converted to paid because the end date was in a different time zone.</li>
+</ul>
+
+<p>The fix is not to fear the cloud. It is to make a habit of looking at the resource list, not just the invoice. An invoice tells you what happened. A resource list tells you what is still happening.</p>
+<h2 id="a-safe-first-cloud-experiment">A safe first cloud experiment</h2>
+<p>Use this sequence for AWS, Google Cloud, Azure, or Oracle:</p>
+<ol>
+<li><strong>Create a dedicated project or account</strong> for the experiment. Do not mix a learning project with production data.</li>
+<li><strong>Give it a name you will recognize</strong> in a billing dashboard, such as <code>asdale-ai-lab-2026</code>.</li>
+<li><strong>Set a budget alert at 25%, 50%, 75%, and 90%</strong> of a low monthly number, even if you expect to spend nothing. Forward alerts to a folder you check.</li>
+<li><strong>Set a hard quota or budget action where available.</strong> AWS Budgets can run actions; Google Cloud needs additional configuration; Azure budgets can call action groups. These are not all instant.</li>
+<li><strong>Choose the smallest instance and the closest region</strong> that actually meets the need. Write down the region; pricing and free eligibility vary.</li>
+<li><strong>Use a card you can monitor.</strong> A business card with a low credit limit or a virtual card with a cap can reduce exposure, but check that the provider accepts it and that your issuer&#39;s protection still applies.</li>
+<li><strong>Put a teardown event on your calendar</strong> before you deploy. Include the steps: stop instances, delete disks, release IPs, delete buckets, close the project.</li>
+<li><strong>Export anything you need</strong> before deleting the project. Deletion is not a backup.</li>
+<li><strong>Review the resource list the next day</strong> and at the end of the week. This is when orphaned resources are easiest to spot.</li>
+<li><strong>Close the account or downgrade to a free state</strong> when the experiment is over. Removing the card is not the same as closing the account.</li>
+</ol>
+
+<p>If you cannot name the resource you will delete and the date you will delete it, you are not ready to deploy.</p>
+<h2 id="which-one-should-you-use">Which one should you use?</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Job</th><th scope="col">Sensible starting point</th></tr></thead><tbody><tr><td>Publish this manual or another static site</td><td>GitHub Pages or a commercial static-hosting plan.</td></tr><tr><td>Run a tiny API or web demo</td><td>Render free for a short demo; move to a paid plan before real users.</td></tr><tr><td>Test inference at the edge</td><td>Cloudflare Workers AI free allocation, with a usage cap in your app.</td></tr><tr><td>Learn cloud infrastructure</td><td>One provider&#39;s free trial, one small project, aggressive teardown.</td></tr><tr><td>Run an open model for privacy</td><td>Your own hardware, or a paid private endpoint—not a free notebook with public data.</td></tr><tr><td>Host a database for a real business</td><td>A paid managed database with backups and a support path. Free trials are not a backup plan.</td></tr></tbody></table></div>
+<p>Do not spread a first experiment across four clouds at once. You will spend your time learning four billing dashboards and miss the actual work.</p>
+<h2 id="free-is-not-the-same-as-reliable">Free is not the same as reliable</h2>
+<p>Free and low-cost tiers are often shared capacity. They can be rate-limited, paused, reclaimed, or sunset. That is acceptable for a demo, a tutorial, or a learning exercise. It is not acceptable for a customer&#39;s order form, your book&#39;s download system, or a paid course portal without a fallback.</p>
+<p>If a free resource is on the critical path of your business, write down the failure mode and the paid fallback. &quot;It worked yesterday&quot; is not an uptime guarantee.</p>
+<h2 id="try-this-now">Try this now</h2>
+<ol>
+<li>Pick one cloud provider and open its free-tier page in a new tab. Find the <strong>end date</strong> of the trial and what happens when it ends.</li>
+<li>Create a budget or a low-usage alert <strong>before</strong> creating a resource.</li>
+<li>Deploy one small thing—a static page or a tiny VM—and then tear it down on purpose. Practice the cleanup before you need it.</li>
+<li>Add the account, end date, budget, and cleanup URL to the tracker.</li>
+</ol>
+
+<p>For programs that can extend your cloud runway legitimately, read <a href="04-startup-credit-programs.html">Chapter 4</a>. For the provider-specific controls that actually stop spending, keep <a href="08-avoid-surprise-bills.html">Chapter 8</a> nearby.</p>
+      </div>
+      <aside class="chapter-safety-note">
+        <span class="chapter-safety-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+        <div>
+          <h2>The habit behind the list</h2>
+          <p>Offers change. A dated check, a tested limit, and a cancel path do not. Use the tracker before you use the trial.</p>
+        </div>
+        <a class="button button-secondary" href="tracker.html">Open the tracker</a>
+      </aside>
+      <nav class="chapter-pager" aria-label="Chapter navigation">
+        <a class="pager-card pager-card--previous" href="02-free-ai-api-credits.html">
+  <span class="pager-direction">Previous</span>
+  <span class="pager-label">Chapter 02</span>
+  <span class="pager-title">Free AI API credits</span>
+  <span class="pager-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-left"></use></svg></span>
+</a>
+        <a class="pager-card pager-card--next" href="04-startup-credit-programs.html">
+  <span class="pager-direction">Next</span>
+  <span class="pager-label">Chapter 04</span>
+  <span class="pager-title">Startup credit programs</span>
+  <span class="pager-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-right"></use></svg></span>
+</a>
+      </nav>
+    </div>
+  </div>
+</article>
+  </main>
+  <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html" aria-label="The Free Tier Field Guide, home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+  <rect width="42" height="42" rx="12" fill="currentColor"/>
+  <path d="M10.8 30.8 19.4 11h3.2l8.6 19.8h-5.1l-1.5-4h-7.2l-1.5 4h-5.1Zm8-8h4.4l-2.2-5.9-2.2 5.9Z" fill="#f8f2e4"/>
+  <circle cx="32.4" cy="31.5" r="3.1" fill="#eef0a5"/>
+</svg>
+        <span class="brand-copy">
+          <span class="brand-kicker">Asdale Dynamics</span>
+          <span class="brand-title">The Free Tier Field Guide</span>
+        </span>
+      </a>
+      <p>Free AI, cloud, and developer offers, with the catch included.</p>
+      <p class="footer-small">Plain English. Dated facts. A cancel date before the card.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <a href="guide.html">The guide</a>
+      <a href="finder.html">Program finder</a>
+      <a href="tracker.html">Tracker &amp; reminders</a>
+      <a href="sources.html">Sources &amp; changes</a>
+    </div>
+    <div class="footer-links">
+      <h2>Read before signing up</h2>
+      <a href="08-avoid-surprise-bills.html">Avoid surprise bills</a>
+      <a href="07-open-source-alternatives.html">Run AI locally</a>
+      <a href="free-credit-tracker-template.csv" download>Download the tracker</a>
+    </div>
+    <div class="footer-note">
+      <h2>The short rule</h2>
+      <p>No card without a hard cap, a real job, and a dated exit.</p>
+      <time class="footer-stamp" datetime="2026-10-22">Checked October 22, 2026</time>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>Copyright (c) 2026 Asdale Dynamics, LLC. All rights reserved.</p>
+    <p>Educational material only—not financial, legal, tax, medical, or compliance advice. Offers and terms change—verify with the provider.</p>
+  </div>
+</footer>
+</body>
+</html>

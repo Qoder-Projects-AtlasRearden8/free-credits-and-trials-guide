@@ -1,0 +1,51 @@
+[
+  {
+    "date": "2026-10-22",
+    "kind": "At check",
+    "title": "Anthropic's public startup cohort was full",
+    "summary": "The Claude for Startups page said the current cohort was full and not accepting new applications. Partner offers and VC-route credits were still described, but this was not a self-serve signup bonus on October 22.",
+    "url": "https://claude.com/programs/startups"
+  },
+  {
+    "date": "2026-10-22",
+    "kind": "At check",
+    "title": "Together AI no longer offered free trial credits",
+    "summary": "Together AI's platform was prepaid at check and required a minimum credit purchase. The old 'free trial credits' advice in many blog posts is stale.",
+    "url": "https://docs.together.ai/docs/billing-credits"
+  },
+  {
+    "date": "2026-10-22",
+    "kind": "At check",
+    "title": "AWS Free Tier is a credit-and-plan model for new accounts",
+    "summary": "New accounts get $100 in credits, can earn more, and can use a Free account plan for up to six months. The older twelve-month structure is not the right model for a new signup.",
+    "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html"
+  },
+  {
+    "date": "2026-08-19",
+    "kind": "New offer",
+    "title": "Google announced a one-year Gemini student offer",
+    "summary": "Eligible U.S. college students could get Google AI Pro for a year; other markets received an AI Plus offer. This is a consumer plan, not Gemini API credits.",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/"
+  },
+  {
+    "date": "2026-07-30",
+    "kind": "Retirement",
+    "title": "GitHub Models was fully retired",
+    "summary": "The playground, model catalog, inference API, and bring-your-own-key features were retired. Free developer tools can disappear even when they are popular.",
+    "url": "https://docs.github.com/en/github-models"
+  },
+  {
+    "date": "2026-06-25",
+    "kind": "Eligibility change",
+    "title": "Cursor closed new student discount sign-ups",
+    "summary": "The legacy student discount was discontinued for new applicants; existing students retained access until their plan ended. Many 2025 guides still describe the old offer.",
+    "url": "https://cursor.com/help/account-and-billing/student-discount"
+  },
+  {
+    "date": "2026-06-01",
+    "kind": "Pricing change",
+    "title": "GitHub Copilot moved to usage-based billing",
+    "summary": "Copilot plans changed how usage and premium requests are counted. The free plan still exists, but the old assumptions about unlimited access do not apply.",
+    "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+  }
+]

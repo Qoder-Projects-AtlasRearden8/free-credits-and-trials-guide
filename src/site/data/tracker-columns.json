@@ -1,0 +1,97 @@
+[
+  {
+    "key": "program_name",
+    "label": "Program name",
+    "help": "The offer or tool you are tracking."
+  },
+  {
+    "key": "provider",
+    "label": "Provider",
+    "help": "The company or organization behind it."
+  },
+  {
+    "key": "category",
+    "label": "Category",
+    "help": "AI API, Cloud, Startup, Education, Nonprofit, Local / open source, or Other."
+  },
+  {
+    "key": "what_you_get",
+    "label": "What you get",
+    "help": "A short, factual summary of the free allowance."
+  },
+  {
+    "key": "eligibility",
+    "label": "Eligibility",
+    "help": "Who qualifies. Write 'verify' when you are unsure."
+  },
+  {
+    "key": "official_url",
+    "label": "Official URL",
+    "help": "The provider's own page, not an affiliate link."
+  },
+  {
+    "key": "date_checked",
+    "label": "Date checked",
+    "help": "The date you last reviewed the terms (YYYY-MM-DD)."
+  },
+  {
+    "key": "account_email",
+    "label": "Account email",
+    "help": "Use a dedicated business email you control."
+  },
+  {
+    "key": "project_or_org_id",
+    "label": "Project or org ID",
+    "help": "Workspace, project, org, or account identifier."
+  },
+  {
+    "key": "start_date",
+    "label": "Start date",
+    "help": "When the trial or credit began (YYYY-MM-DD)."
+  },
+  {
+    "key": "credit_expires_on",
+    "label": "Credit expires",
+    "help": "When the credit expires, if known."
+  },
+  {
+    "key": "card_on_file",
+    "label": "Card on file",
+    "help": "yes or no. A card changes the risk."
+  },
+  {
+    "key": "auto_renew_date",
+    "label": "Auto-renew date",
+    "help": "When a subscription renews or a trial converts."
+  },
+  {
+    "key": "decide_by_date",
+    "label": "Decide by",
+    "help": "The date you will keep, downgrade, or cancel, before renewal."
+  },
+  {
+    "key": "cancel_or_downgrade_url",
+    "label": "Cancel or downgrade URL",
+    "help": "The exact settings or help page you will need."
+  },
+  {
+    "key": "monthly_budget_usd",
+    "label": "Monthly budget",
+    "help": "Your internal cap, even if the provider has no hard limit."
+  },
+  {
+    "key": "alert_threshold_pct",
+    "label": "Alert threshold",
+    "help": "The alert percentage you configured, such as 25, 50, 75, or 90."
+  },
+  {
+    "key": "status",
+    "label": "Status",
+    "help": "researching, active, expired, cancelled, or paid."
+  },
+  {
+    "key": "notes",
+    "label": "Notes",
+    "help": "Data-use caveats, usage observations, support contact, or a cancellation confirmation number."
+  }
+]
