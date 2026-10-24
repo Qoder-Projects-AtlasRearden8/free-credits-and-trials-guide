@@ -1,7 +1,11 @@
-node_modules/
-.DS_Store
+!.env.example
 *.log
+*.pyc
+.DS_Store
 .env
 .env.*
-!.env.example
 .task
+.venv/
+__pycache__/
+dist/*.tmp
+node_modules/
